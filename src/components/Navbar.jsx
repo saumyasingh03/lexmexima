@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-[#17594A]">IISPPR</span>
+            <span className="text-2xl font-bold text-[#17594A]">Nari Parcham</span>
           </Link>
 
           {/* Desktop Navigation Links */}

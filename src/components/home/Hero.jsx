@@ -79,8 +79,9 @@ const Hero = () => {
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   const missionLines = [
-    "We're On A Mission",
-    "To Save Our Planet"
+    "We’re On A Mission",
+    "To Build Feminist Power",
+    "From the Margins",
   ];
 
   return (
@@ -125,8 +126,8 @@ const Hero = () => {
             className="space-y-4 max-w-xl"
           >
             <p className="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed">
-              Join us in creating a greener, more sustainable world. Together we can make a difference
-              through conservation, renewable energy, and eco-friendly practices.
+              We are a grassroots movement led by women. No donors. No gatekeepers. Just solidarity, healing, and justice.
+               Together, we are reclaiming dignity and power in the face of violence, casteism, and silence
             </p>
           </motion.div>
 

@@ -26,7 +26,7 @@ const About = () => {
         <div className="min-h-screen">
             <HeroSection/>
             <section className="relative w-full">
-                <img src={images.top} className="w-full absolute -z-10" alt="Top decoration"/>
+                <img src={images.top} className="w-full absolute   -z-10" alt="Top decoration"/>
 
                 <motion.div
                     className='pt-20 md:pt-32 md:mb-15 lg:mb-28'
