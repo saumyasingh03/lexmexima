@@ -107,7 +107,7 @@ const WorkTogether = () => {
             className="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col"
           >
             <img
-              src="/gallery/im53.jpg" /** pick any third image you have */
+              src="/home/about1.webp" /** pick any third image you have */
               alt="Collaborators creating together"
               className="w-full h-52 md:h-64 object-cover"
             />
