@@ -27,8 +27,8 @@ const WorkTogether = () => {
             from the Margins
           </h3>
           <p className="max-w-2xl mx-auto font-serif text-gray-600">
-            We are a grassroots feminist movement led by Dalit, Muslim, Adivasi and
-            working-class women. No donors. No gatekeepers. Just justice.
+            We are a grassroots feminist movement led by Dalit, Muslim, Adivasi
+            and working-class women. No donors. No gatekeepers. Just justice.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ const WorkTogether = () => {
             className="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col"
           >
             <img
-              src="/gallery_carousel/gi15.webp"
+              src="/gallery/im14.jpg"
               alt="Volunteers working together"
               className="w-full h-52 md:h-64 object-cover"
             />
@@ -52,9 +52,9 @@ const WorkTogether = () => {
                 Volunteers
               </h4>
               <p className="text-gray-600 mb-4 grow">
-                Lawyers, social workers, teachers & community organizers help run
-                legal literacy circles, healing spaces and skill workshops. Come
-                with humility—expect to learn as much as you teach.
+                Lawyers, social workers, teachers & community organizers help
+                run legal literacy circles, healing spaces and skill workshops.
+                Come with humility—expect to learn as much as you teach.
               </p>
               <a
                 href="/join#volunteer"
@@ -75,7 +75,7 @@ const WorkTogether = () => {
             className="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col"
           >
             <img
-              src="/gallery_carousel/gi17.webp"
+              src="/gallery_carousel/gi7.webp"
               alt="Learners in a study circle"
               className="w-full h-52 md:h-64 object-cover"
             />
@@ -107,7 +107,7 @@ const WorkTogether = () => {
             className="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col"
           >
             <img
-              src="/gallery_carousel/gi18.webp" /** pick any third image you have */
+              src="/gallery/im53.jpg" /** pick any third image you have */
               alt="Collaborators creating together"
               className="w-full h-52 md:h-64 object-cover"
             />

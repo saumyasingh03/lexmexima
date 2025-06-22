@@ -27,9 +27,9 @@ const GalleryCarousel = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   var images1 = [
-    // images[0],
+    images[7],
     images[1],
-    // images[2],
+    images[2],
     images[3],
     images[4],
     images[5],
@@ -97,7 +97,7 @@ const GalleryCarousel = () => {
               className={`overflow-hidden rounded-xl ${
                 index === 1 || index === 4 ? "sm:col-span-2 md:col-span-1" : ""
               } ${
-                index === 2 || index === 5 ? "sm:col-span-1 md:col-span-2" : ""
+                index === 3 || index === 5 ? "sm:col-span-1 md:col-span-2" : ""
               }`}
             >
               <img
