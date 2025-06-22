@@ -1,35 +1,35 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { FaHandsHelping, FaUsers, FaDove, FaGlobe } from 'react-icons/fa';
-import { IoWomanOutline } from 'react-icons/io5';
-import { motion, useInView } from 'framer-motion';
-import CountUp from 'react-countup';
+import React, { useRef, useState, useEffect } from "react";
+import { FaHandsHelping, FaUsers, FaDove, FaGlobe } from "react-icons/fa";
+import { IoWomanOutline } from "react-icons/io5";
+import { motion, useInView } from "framer-motion";
+import CountUp from "react-countup";
 
 const stats = [
   {
     icon: <FaHandsHelping className="text-primary text-3xl md:text-4xl" />,
     number: 21,
-    label: 'Active States',
+    label: "Active States",
   },
   {
     icon: <FaGlobe className="text-primary text-3xl md:text-4xl" />,
     number: 53,
-    label: 'Countries Research Community',
+    label: "Countries Research Community",
   },
   {
     icon: <FaUsers className="text-primary text-3xl md:text-4xl" />,
     number: 10000,
-    label: 'People Reach',
+    label: "Voices Raised",
     isMillion: true,
   },
   {
     icon: <IoWomanOutline className="text-primary text-3xl md:text-4xl" />,
     number: 8000,
-    label: 'Women Reach',
+    label: "Women Reach",
   },
   {
     icon: <FaDove className="text-primary text-3xl md:text-4xl" />,
     number: 50000,
-    label: 'People on Social Media',
+    label: "People on Social Media",
   },
 ];
 
@@ -41,7 +41,7 @@ const fadeInUp = {
     transition: {
       delay: i * 0.2,
       duration: 0.6,
-      ease: 'easeOut',
+      ease: "easeOut",
     },
   }),
 };
@@ -58,7 +58,10 @@ const StatsSection = () => {
   }, [isInView]);
 
   return (
-    <section ref={sectionRef} className="relative w-full py-16 sm:py-20 md:py-24 bg-white">
+    <section
+      ref={sectionRef}
+      className="relative w-full py-16 sm:py-20 md:py-24 bg-white"
+    >
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <motion.div
           initial="hidden"
@@ -72,6 +75,7 @@ const StatsSection = () => {
             <br />
             It's a Demand
           </h2>
+
           <p className="text-gray-600 max-w-3xl mx-auto text-sm font-serif sm:text-base">
             We build feminist power where it’s denied most — in silence, in
             struggle, and in solidarity
@@ -104,7 +108,7 @@ const StatsSection = () => {
                     end={stat.number}
                     duration={2.5}
                     separator=","
-                    suffix={stat.isMillion ? '+' : '+'}
+                    suffix={stat.isMillion ? "+" : "+"}
                   />
                 ) : (
                   `0+`
@@ -119,13 +123,13 @@ const StatsSection = () => {
 
         {/* Logos */}
         <div className="flex justify-center gap-12 mt-16">
-          <motion.img 
+          <motion.img
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
-            src="/home/statsbottom.jpg" 
-            alt="Partner logo" 
+            src="/home/statsbottom.jpg"
+            alt="Partner logo"
             className="h-10 sm:h-12 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
           />
         </div>
