@@ -70,11 +70,11 @@ const TestimonialsSection = () => {
           className="text-center mb-12"
         >
           <h3 className="text-accent text-lg font-medium mb-3">— Testimonials —</h3>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-white mb-4">
             Trusted by leaders <br />
             <span className="text-accent">from various industries</span>
           </h2>
-          <p className="text-white/80 text-sm sm:text-base max-w-2xl mx-auto">
+          <p className="text-white/80 font-serif text-sm sm:text-base max-w-2xl mx-auto">
             Learn why professionals trust our solutions to complete their development journeys
           </p>
         </motion.div>

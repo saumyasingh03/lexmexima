@@ -108,7 +108,7 @@ const Projects = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="bg-white/20 backdrop-blur-md rounded-lg p-6 mt-6 md:mt-0 md:ml-8 max-w-xs shadow-lg border border-white/30"
           >
-            <h2 className="text-xl font-semibold text-white mb-2">Our Mission</h2>
+            <h2 className="text-xl font-semibold text-white mb-2 font-serif">Our Mission</h2>
             <p className="text-white/90 text-sm mb-2">
               To create lasting positive change by supporting projects that nurture people and the planet.
             </p>

@@ -263,9 +263,9 @@ const TestimonialGrid = () => {
 
 
                     <div className="px-4 relative z-10">
-                        <div className="flex items-center justify-center w-full gap-1 mb-10">
+                        <div className="flex items-center justify-center w-full gap-3 mb-10">
                             <div className="bg-[#252A34] w-[40px] h-[2px]"> </div>
-                            <h2 className="text-4xl font-serif text-[#252A34]  font-medium text-center ">
+                            <h2 className="text-4xl font-serif text-[#252A34]  font-bold text-center ">
                                 See More
                             </h2>
                             <div className="bg-[#252A34] w-[40px] h-[2px]"> </div>

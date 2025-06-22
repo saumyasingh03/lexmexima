@@ -22,11 +22,11 @@ const WorkTogether = () => {
         {/* headline */}
         <div className="text-center mb-12">
           <h2 className="text-lg font-medium text-accent mb-2">About Us</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+          <h3 className="text-3xl md:text-4xl font-bold font-serif text-primary mb-4">
             Together We Rise <br />
             from the Margins
           </h3>
-          <p className="max-w-2xl mx-auto text-gray-600">
+          <p className="max-w-2xl mx-auto font-serif text-gray-600">
             We are a grassroots feminist movement led by Dalit, Muslim, Adivasi and
             working-class women. No donors. No gatekeepers. Just justice.
           </p>
@@ -48,7 +48,7 @@ const WorkTogether = () => {
               className="w-full h-52 md:h-64 object-cover"
             />
             <div className="p-6 flex flex-col grow">
-              <h4 className="text-xl font-semibold text-primary mb-3">
+              <h4 className="text-xl font-bold font-serif text-primary mb-3">
                 Volunteers
               </h4>
               <p className="text-gray-600 mb-4 grow">
@@ -80,7 +80,7 @@ const WorkTogether = () => {
               className="w-full h-52 md:h-64 object-cover"
             />
             <div className="p-6 flex flex-col grow">
-              <h4 className="text-xl font-semibold text-primary mb-3">
+              <h4 className="text-xl font-bold font-serif text-primary mb-3">
                 Learners
               </h4>
               <p className="text-gray-600 mb-4 grow">
@@ -112,7 +112,7 @@ const WorkTogether = () => {
               className="w-full h-52 md:h-64 object-cover"
             />
             <div className="p-6 flex flex-col grow">
-              <h4 className="text-xl font-semibold text-primary mb-3">
+              <h4 className="text-xl font-bold font-serif text-primary mb-3">
                 Collaborators
               </h4>
               <p className="text-gray-600 mb-4 grow">

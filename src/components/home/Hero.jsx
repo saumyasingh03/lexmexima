@@ -118,14 +118,14 @@ const Hero = () => {
             variants={fadeInUp}
             className="text-white space-y-4"
           >
-            <TypingText lines={missionLines} className="space-y-2" />
+            <TypingText lines={missionLines} className="space-y-2 font-serif" />
           </motion.div>
 
           <motion.div 
             variants={fadeInUp}
             className="space-y-4 max-w-xl"
           >
-            <p className="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed font-serif">
               We are a grassroots movement led by women. No donors. No gatekeepers. Just solidarity, healing, and justice.
                Together, we are reclaiming dignity and power in the face of violence, casteism, and silence
             </p>
