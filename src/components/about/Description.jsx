@@ -27,10 +27,8 @@ const Description = () => {
 
       {/* text block – only heading & paragraph replaced */}
       <div className="max-w-xl text-center lg:text-left lg:mt-10 mt-14 md:mt-1">
-        <h2 className="text-4xl font-[playfair] font-bold text-gray-900 mb-6 mt-6 md:mt-32">
-          Why We Are Doing This
-        </h2>
-        <p className="text-gray-700 font-[montserrat] text-lg leading-relaxed max-w-md mx-auto lg:mx-0 whitespace-pre-line">
+        <h2 className="text-4xl font-serif font-bold text-gray-900 mb-6 mt-6 md:mt-32">Why We Do This</h2>
+        <p className="text-gray-700 text-lg leading-relaxed max-w-md mx-auto lg:mx-0">
           Because silence is not natural—it is enforced. Because women at the
           margins are not waiting to be empowered; they are demanding dignity.
           Domestic violence, caste shame, unpaid care and religious policing

@@ -4,7 +4,7 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 const ContactInfo = () => {
     return (
         <div className="bg-white p-8 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-6 text-gray-800">Contact Information</h2>
+            <h2 className="text-2xl font-bold mb-6 text-gray-800 font-serif">Contact Information</h2>
             
             <div className="space-y-6">
                 <div className="flex items-start space-x-4">

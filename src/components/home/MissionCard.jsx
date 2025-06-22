@@ -14,9 +14,9 @@ const MissionCard = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300"
+        className="text-2xl font-serif sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300"
       >
-        Nari Parcham Mission
+        Our Mission
       </motion.h2>
 
       <motion.p
@@ -40,14 +40,14 @@ const MissionCard = () => {
           whileHover={{ scale: 1.05 }}
           className="bg-white/10 p-4 rounded-lg text-center backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
         >
-          <div className="text-accent-dark text-3xl font-bold mb-2">10K+</div>
+          <div className="text-accent text-3xl font-bold mb-2">10K+</div>
           <div className="text-sm font-medium">People Reach</div>
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.05 }}
           className="bg-white/10 p-4 rounded-lg text-center backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
         >
-          <div className="text-accent-dark text-3xl font-bold mb-2">21+</div>
+          <div className="text-accent text-3xl font-bold mb-2">21+</div>
           <div className="text-sm font-medium">Active States</div>
         </motion.div>
       </motion.div>
