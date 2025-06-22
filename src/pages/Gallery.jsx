@@ -4,30 +4,51 @@ const Gallery = () => {
   const [isPaused, setIsPaused] = useState(false);
   const scrollRef = useRef(null);
 
-  const images = [
-    "/gallery/im1.jpg",
-    "/gallery/im3.jpeg",
-    "/gallery/im6.jpg",
-    "/gallery/im7.jpg",
-    "/gallery/im8.jpg",
-    "/gallery/im12.jpg",
-    "/gallery/im13.jpg",
-    "/gallery/im14.jpg",
-    "/gallery/im15.jpg",
-    "/gallery/im16.jpg",
-    "/gallery/im17.jpg",
-    "/gallery/im23.jpeg",
-    "/gallery/im24.jpg",
-    "/gallery/im25.jpg",
-    "/gallery/im31.jpg",
-    "/gallery/im34.jpg",
-    "/gallery/im35.jpg",
-    "/gallery/im37.jpg",
-    "/gallery/im38.jpg",
-    "/gallery/im39.jpg",
-    "/gallery/im42.jpg",
-    "/gallery/im45.jpg",
+  // ✅ Actual filenames
+  const filenames = [
+    "im1.jpg",
+    "im3.jpeg",
+    "im6.jpg",
+    "im7.jpg",
+    "im8.jpg",
+    "im12.jpg",
+    "im13.jpg",
+    "im14.jpg",
+    "im15.jpg",
+    "im16.jpg",
+    "im17.jpg",
+    "im23.jpeg",
+    "im24.jpg",
+    "im25.jpg",
+    "im31.jpg",
+    "im34.jpeg",
+    "im35.jpeg",
+    "im37.jpeg",
+    "im38.jpg",
+    "im39.jpg",
+    "im42.jpg",
+    "im45.jpeg",
+    "im50.jpg",
+    "im51.jpg",
+    "im53.jpg",
+    "im54.jpg",
+    "im55.jpg",
+    "im56.jpg",
+    "im58.jpeg",
+    "im59.jpg",
+    "im60.jpg",
+    "im61.jpg",
+    "im62.jpg",
+    "im63.jpg",
+    "im66.jpg",
+    "im67.jpg",
+    "im68.jpg",
+    "im69.jpg",
+    "im70.jpg",
+    "im71.jpg",
   ];
+
+  const images = filenames.map((name) => `/gallery/${name}`);
 
   useEffect(() => {
     let scrollInterval;
@@ -48,18 +69,12 @@ const Gallery = () => {
           isScrollingBack = true;
 
           setTimeout(() => {
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth",
-            });
+            window.scrollTo({ top: 0, behavior: "smooth" });
             isScrollingBack = false;
             startScrolling(); // restart scrolling after scroll-to-top
           }, 2000); // wait for 2 seconds before scrolling to top
         } else {
-          window.scrollBy({
-            top: 1,
-            behavior: "smooth",
-          });
+          window.scrollBy({ top: 1, behavior: "smooth" });
         }
       }, 30);
     };
