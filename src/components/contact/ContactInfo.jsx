@@ -13,10 +13,7 @@ const ContactInfo = () => {
           <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
           <div>
             <h3 className="font-semibold text-gray-800">Address</h3>
-            <p className="text-gray-600">
-              Office No. 30 Nihad Plaza , Opposite Zakir Hussain School, Civil
-              lines, Near AMU, Aligarh 202001
-            </p>
+            <p className="text-gray-600">13/70, Pakka Bagh, Saharanpur, UP</p>
           </div>
         </div>
 

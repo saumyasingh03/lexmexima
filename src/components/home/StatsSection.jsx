@@ -70,12 +70,13 @@ const StatsSection = () => {
           variants={fadeInUp}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-primary mb-4">
             Justice Is Not a Donation
             <br />
             It's a Demand
           </h2>
-          <p className="text-gray-600 max-w-3xl mx-auto text-sm sm:text-base">
+
+          <p className="text-gray-600 max-w-3xl mx-auto text-sm font-serif sm:text-base">
             We build feminist power where it’s denied most — in silence, in
             struggle, and in solidarity
           </p>

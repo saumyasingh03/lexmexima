@@ -1,9 +1,19 @@
 import React, { useState } from "react";
 import { Outlet, Link, useLocation } from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Layout = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+
+  const navLinks = [
+    { to: "/", label: "Home" },
+    { to: "/about", label: "About" },
+    { to: "/projects", label: "Projects" },
+    { to: "/gallery", label: "Gallery" },
+    { to: "/contact", label: "Contact" },
+  ];
 
   const isActive = (path) => {
     if (path === "/" && location.pathname === "/") {
