@@ -24,7 +24,7 @@ const Layout = () => {
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <nav className="container mx-auto px-4 py-3 sm:py-4">
           <div className="flex justify-between items-center">
-            <Link to="/" className="text-xl sm:text-2xl font-bold text-primary">
+            <Link to="/" className="text-xl sm:text-2xl font-bold font-serif text-primary">
               Nari Parcham
             </Link>
 
@@ -117,7 +117,7 @@ const Layout = () => {
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="md:hidden py-4 bg-white border-t mt-3">
+            <div className="md:hidden absoluet py-4 bg-white border-t mt-3">
               <ul className="flex flex-col space-y-3 px-4">
                 <li>
                   <Link
@@ -198,16 +198,16 @@ const Layout = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">
+              <h2 className="text-3xl font-serif font-bold mb-3 sm:mb-4">
                 Nari Parcham
-              </h3>
-              <p className="text-gray-300 text-sm sm:text-base">
+              </h2>
+              <p className="text-gray-300 font-serif text-sm sm:text-base">
                 Advancing grassroots feminist resistance and collective healing
                 for justice, dignity, and liberation.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">
+              <h4 className="font-semibold font-serif mb-3 sm:mb-4 text-sm sm:text-base">
                 Quick Links
               </h4>
               <ul className="space-y-2">
@@ -246,7 +246,7 @@ const Layout = () => {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">
+              <h4 className="font-semibold font-serif mb-3 sm:mb-4 text-sm sm:text-base">
                 Contact
               </h4>
               <p className="text-gray-300 text-sm sm:text-base">
@@ -263,7 +263,7 @@ const Layout = () => {
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">
+              <h4 className="font-semibold mb-3 font-serif sm:mb-4 text-sm sm:text-base">
                 Follow Us
               </h4>
               <div className="flex space-x-4">

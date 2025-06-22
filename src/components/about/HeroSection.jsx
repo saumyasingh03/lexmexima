@@ -22,7 +22,7 @@ const HeroSection = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative w-full h-[75vh] flex items-end justify-center overflow-hidden"
+        className="relative w-full h-[90vh] flex items-end justify-center overflow-hidden"
       >
         <motion.img
           initial={{ scale: 1.2 }}
