@@ -94,7 +94,7 @@ const Layout = () => {
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden focus:outline-none text-primary"
+              className="md:hidden focus:outline-none text-white bg-primary hover:bg-accent"
               onClick={toggleMobileMenu}
               aria-label="Toggle menu"
             >
