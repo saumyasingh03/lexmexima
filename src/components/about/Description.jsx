@@ -1,9 +1,10 @@
 import React from "react";
-import { images } from "./images.js"
+import { images } from "./images.js";
 
 const Description = () => {
   return (
     <section className="flex flex-col lg:flex-row items-center justify-center gap-16 p-6 pt-12 md:pb-36 w-full pl-10">
+      {/* images block – unchanged */}
       <div className="relative w-full max-w-lg flex-shrink-0">
         <div className="md:w-[28rem] md:h-[28rem] sm:w-[24rem] sm:h-[24rem] w-[18rem] h-[18rem] rounded-xl overflow-hidden shadow-lg">
           <img
@@ -24,10 +25,20 @@ const Description = () => {
         </div>
       </div>
 
+      {/* text block – only heading & paragraph replaced */}
       <div className="max-w-xl text-center lg:text-left lg:mt-10 mt-14 md:mt-1">
-        <h2 className="text-4xl font-[playfair] font-bold text-gray-900 mb-6 mt-6 md:mt-32">Education</h2>
-        <p className="text-gray-700 font-[montserrat] text-lg leading-relaxed max-w-md mx-auto lg:mx-0">
-          At IISPPR, we believe every child deserves a strong foundation. From early childhood to elementary education, we uncover the gaps that hold children back and create solutions rooted in their realities. With two schools in Saharanpur district, Uttar Pradesh, we work hand-in-hand with children, families, and communities, partnering with both hearts and governments to bring lasting change in education.
+        <h2 className="text-4xl font-[playfair] font-bold text-gray-900 mb-6 mt-6 md:mt-32">
+          Why We Are Doing This
+        </h2>
+        <p className="text-gray-700 font-[montserrat] text-lg leading-relaxed max-w-md mx-auto lg:mx-0 whitespace-pre-line">
+          Because silence is not natural—it is enforced. Because women at the
+          margins are not waiting to be empowered; they are demanding dignity.
+          Domestic violence, caste shame, unpaid care and religious policing
+          are not private problems; they are political. We do this for the Dalit
+          woman told not to speak, the Muslim girl told not to dream, the tribal
+          mother raising children in silence, the queer person erased from their
+          own story. We are not here for charity; we are here for justice. No
+          donors. No gatekeepers. Just women, learning and rising together.
         </p>
       </div>
     </section>

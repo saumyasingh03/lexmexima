@@ -21,7 +21,7 @@ const Layout = () => {
             <header className="bg-white shadow-sm sticky top-0 z-50">
                 <nav className="container mx-auto px-4 py-3 sm:py-4">
                     <div className="flex justify-between items-center">
-                        <Link to="/" className="text-xl sm:text-2xl font-bold text-primary">IISPPR</Link>
+                        <Link to="/" className="text-xl sm:text-2xl font-bold text-primary">Nari Parcham</Link>
                         
                         {/* Desktop Navigation */}
                         <ul className="hidden md:flex space-x-6 lg:space-x-8">
@@ -69,8 +69,8 @@ const Layout = () => {
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                         <div>
-                            <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">IISPPR</h3>
-                            <p className="text-gray-300 text-sm sm:text-base">Promoting sustainable practices and environmental conservation for a healthier planet.</p>
+                            <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Nari Parcham</h3>
+                            <p className="text-gray-300 text-sm sm:text-base">Advancing grassroots feminist resistance and collective healing for justice, dignity, and liberation.</p>
                         </div>
                         <div>
                             <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Quick Links</h4>
@@ -99,7 +99,7 @@ const Layout = () => {
                         </div>
                     </div>
                     <div className="border-t border-primary-light mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-300 text-sm sm:text-base">
-                        <p>© {new Date().getFullYear()} IISPPR. All rights reserved.</p>
+                        <p>© {new Date().getFullYear()} Nari Parcham. All rights reserved.</p>
                     </div>
                 </div>
             </footer>

@@ -16,7 +16,7 @@ const MissionCard = () => {
         transition={{ delay: 0.2, duration: 0.6 }}
         className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300"
       >
-        IISPPR Mission
+        Nari Parcham Mission
       </motion.h2>
       
       <motion.p 
@@ -25,7 +25,7 @@ const MissionCard = () => {
         transition={{ delay: 0.3, duration: 0.6 }}
         className="text-sm sm:text-base leading-relaxed mb-6 sm:mb-8 text-gray-200"
       >
-        We believe in a future where humanity lives in harmony with nature. Our mission is to protect ecosystems, combat climate change, and promote sustainable practices that benefit both people and planet.
+        We exist for the women who are unseen, unheard, and unprotected. Our mission is to build feminist consciousness through law, voice, healing, solidarity, and skill. No permission asked. No silence accepted
       </motion.p>
       
       <motion.div 
