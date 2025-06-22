@@ -100,7 +100,7 @@ const ProjectsHighlight = () => {
           className="mt-10 text-center"
         >
           <Link to="/projects">
-            <button className="bg-accent text-primary font-semibold px-6 py-3 rounded-full transition duration-300 hover:bg-white hover:text-primary">
+            <button className="bg-accent text-white font-semibold px-6 py-3 rounded-full transition duration-300 hover:bg-white hover:text-primary">
               View All Projects <span className="ml-1">→</span>
             </button>
           </Link>

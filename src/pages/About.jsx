@@ -26,7 +26,6 @@ const About = () => {
         <div className="min-h-screen">
             <HeroSection/>
             <section className="relative w-full">
-                <img src={images.top} className="w-full absolute   -z-10" alt="Top decoration"/>
 
                 <motion.div
                     className='pt-20 md:pt-32 md:mb-15 lg:mb-28'
@@ -57,7 +56,6 @@ const About = () => {
                     <GalleryCarousel/>
                 </motion.div>
 
-                <img src={images.bottom} className="w-full absolute bottom-100 -z-10" alt="Bottom decoration"/>
             </section>
         </div>
     );

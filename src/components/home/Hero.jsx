@@ -103,20 +103,14 @@ const Hero = () => {
           variants={staggerContainer}
           className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-8"
         >
-          <motion.button
-            variants={fadeInUp}
-            className="group bg-transparent relative px-6 py-3 border border-white rounded-full text-sm text-white overflow-hidden transition-all duration-300 hover:scale-105"
-          >
-            <span className="relative z-10">Nari Parcham</span>
-            <div className="absolute inset-0 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
-          </motion.button>
+          
 
           <motion.div variants={fadeInUp} className="text-white space-y-4">
-            <TypingText lines={missionLines} className="space-y-2" />
+            <TypingText lines={missionLines} className="space-y-2 font-serif" />
           </motion.div>
 
           <motion.div variants={fadeInUp} className="space-y-4 max-w-xl">
-            <p className="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-200 font-serif leading-relaxed">
               We are a grassroots movement led by women. No donors. No
               gatekeepers. Just solidarity, healing, and justice. Together, we
               are reclaiming dignity and power in the face of violence,
