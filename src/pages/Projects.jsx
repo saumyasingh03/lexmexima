@@ -80,7 +80,7 @@ const Projects = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative w-full h-[340px] md:h-[420px] lg:h-[500px] flex items-end justify-center overflow-hidden"
+        className="relative w-full md:h-[420px] lg:h-[500px] flex items-end justify-center overflow-hidden"
       >
         <motion.img
           initial={{ scale: 1.2 }}
@@ -106,13 +106,13 @@ const Projects = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
-            className="bg-white/20 backdrop-blur-md rounded-lg p-6 mt-6 md:mt-0 md:ml-8 max-w-xs shadow-lg border border-white/30"
+            className="bg-white/20 backdrop-blur-md rounded-lg p-6 mt-10 md:mt-0 md:ml-8 md:max-w-xs shadow-lg border border-white/30"
           >
             <h2 className="text-xl font-semibold text-white mb-2 font-serif">Our Mission</h2>
             <p className="text-white/90 text-sm mb-2">
               To create lasting positive change by supporting projects that nurture people and the planet.
             </p>
-            <a href="#learn-more" className="text-lime-300 font-medium hover:text-lime-200 transition-colors duration-300 underline">Learn More →</a>
+            <a href="#learn-more" className="text-violet-300 font-medium hover:text-violet-100 transition-colors duration-300 underline">Learn More →</a>
           </motion.div>
         </div>
       </motion.div>
@@ -147,19 +147,6 @@ const Projects = () => {
       <div className="flex-1 bg-white">
         <ProjectsList projects={filtered} />
       </div>
-
-      {/* Wavy Divider */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.8, duration: 0.6 }}
-        className="relative w-full overflow-hidden" 
-        style={{height:'80px', marginTop:'-40px'}}
-      >
-        <svg className="absolute bottom-0 left-0 w-full h-full" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#3d4d2b" d="M0,0 C480,80 960,0 1440,80 L1440,80 L0,80 Z"></path>
-        </svg>
-      </motion.div>
     </div>
   );
 };

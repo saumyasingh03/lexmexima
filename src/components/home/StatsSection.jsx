@@ -67,11 +67,14 @@ const StatsSection = () => {
           variants={fadeInUp}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl font-serif md:text-5xl font-bold text-primary mb-4">
-            We Believe That We Can Save<br />More Lives With You
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-primary mb-4">
+            Justice Is Not a Donation
+            <br />
+            It's a Demand
           </h2>
-          <p className="text-gray-600 max-w-3xl font-serif mx-auto text-sm sm:text-base">
-            Join our mission to create sustainable communities and protect our planet for future generations
+          <p className="text-gray-600 max-w-3xl mx-auto text-sm font-serif sm:text-base">
+            We build feminist power where it’s denied most — in silence, in
+            struggle, and in solidarity
           </p>
         </motion.div>
 
@@ -116,7 +119,6 @@ const StatsSection = () => {
 
         {/* Logos */}
         <div className="flex justify-center gap-12 mt-16">
-
           <motion.img 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -126,8 +128,6 @@ const StatsSection = () => {
             alt="Partner logo" 
             className="h-10 sm:h-12 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
           />
-
-
         </div>
       </div>
     </section>

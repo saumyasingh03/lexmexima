@@ -3,6 +3,20 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.2,
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  }),
+};
 
 const GalleryCarousel = () => {
   const images = Array.from({ length: 18 }, (_, i) => `/gallery_carousel/gi${i + 1}.webp`);
@@ -38,18 +52,26 @@ const GalleryCarousel = () => {
   const handleMouseLeave = () => instanceRef.current?.play();
 
   return (
-    <section className="relative bg-white py-6 pb-20 px-2 sm:px-10 text-gray-900">
-      <div className="w-full max-w-7xl mx-auto px-2 md:px-8 select-none">
-        <div className="flex flex-col md:flex-row justify-between items-center mb-6 px-2 sm:px-5">
-          <h2 className="text-4xl font-semibold text-primary font-serif">Our Gallery</h2>
+    <section className="relative bg-black/10 py-16 sm:py-20 md:py-24">
+      <div className="container mx-auto px-4 md:px-8 max-w-7xl">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}
+          variants={fadeInUp}
+          className="flex flex-col md:flex-row justify-between items-center mb-10 px-4"
+        >
+          <h2 className="text-3xl sm:text-4xl font-bold font-serif text-primary mb-4 md:mb-0">
+            Our Gallery
+          </h2>
           <Link
             to="/gallery"
-            className="text-md font-semibold flex flex-row items-center gap-1 mt-3 hover:text-accent hover:scale-110 transition-transform"
+            className="inline-flex items-center gap-1 bg-accent text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-colors"
           >
-            <p className="text-base">Learn More</p>
-            <ChevronRight size={18} className="text-accent" />
+            <span>Learn More</span>
+            <ChevronRight size={18} className="text-white" />
           </Link>
-        </div>
+        </motion.div>
 
         {isMobile ? (
           <div className="relative">
@@ -68,20 +90,20 @@ const GalleryCarousel = () => {
               ))}
             </div>
             <div className="flex flex-row justify-center gap-8 mt-4">
-              <div
+              <button
                 aria-label="Previous"
                 onClick={() => instanceRef.current?.prev()}
                 className="bg-primary border-2 border-accent text-white rounded-full size-8 flex items-center justify-center shadow-md hover:bg-accent hover:text-primary transition"
               >
                 <ChevronLeft size={22} />
-              </div>
-              <div
+              </button>
+              <button
                 aria-label="Next"
                 onClick={() => instanceRef.current?.next()}
                 className="bg-primary border-2 border-accent text-white rounded-full size-8 flex items-center justify-center shadow-md hover:bg-accent hover:text-primary transition"
               >
                 <ChevronRight size={22} />
-              </div>
+              </button>
             </div>
           </div>
         ) : (
@@ -121,27 +143,27 @@ const GalleryCarousel = () => {
               ))}
             </div>
 
-            <div
+            <button
               aria-label="Previous"
               onClick={() => instanceRef.current?.prev()}
               className="absolute top-1/2 -left-20 -translate-y-1/2 bg-primary border-2 border-accent text-white rounded-full w-11 h-11 flex items-center justify-center shadow-lg hover:bg-accent hover:text-primary transition"
             >
               <ChevronLeft size={28} />
-            </div>
-            <div
+            </button>
+            <button
               aria-label="Next"
               onClick={() => instanceRef.current?.next()}
-              className="absolute top-1/2 -right-20 -translate-y-1/2 bg-primary border-2 border-accent text-white bg-none rounded-full w-11 h-11 flex items-center justify-center shadow-lg hover:bg-accent hover:text-primary transition"
+              className="absolute top-1/2 -right-20 -translate-y-1/2 bg-primary border-2 border-accent text-white rounded-full w-11 h-11 flex items-center justify-center shadow-lg hover:bg-accent hover:text-primary transition"
             >
-              <ChevronRight />
-            </div>
+              <ChevronRight size={28} />
+            </button>
           </div>
         )}
 
         {!isMobile && (
           <div className="flex justify-center mt-4 space-x-2">
             {slides.map((_, idx) => (
-              <div
+              <button
                 key={idx}
                 onClick={() => instanceRef.current?.moveToIdx(idx)}
                 className={`w-8 h-2 rounded-full transition-all duration-200 ${

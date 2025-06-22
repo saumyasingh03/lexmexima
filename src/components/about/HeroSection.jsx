@@ -48,13 +48,13 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
-            className="bg-white/20 backdrop-blur-md rounded-lg p-6 mt-6 md:mt-0 md:ml-8 max-w-xs shadow-lg border border-white/30"
+            className="bg-white/20 backdrop-blur-md rounded-lg p-6 mt-10 md:mt-0 md:ml-8 md:max-w-xs shadow-lg border border-white/30"
           >
             <h2 className="text-xl font-semibold text-white font-serif mb-2">Why We Exist: Feminism for the Margins</h2>
             <p className="text-white/90 text-sm mb-2">
               Nari Parcham exists to amplify the voices of women at the margins—Dalit, Muslim, Adivasi, queer, working-class—who are often ignored by mainstream feminism. We challenge structural oppression rooted in caste, religion, patriarchy, and poverty by creating spaces for women to share their stories, find solidarity, and reclaim power. Our feminism is grounded in lived realities, collective healing, and political resistance—not charity, but long-overdue justice.
             </p>
-            <a href="#learn-more" className="text-lime-300 font-medium hover:text-lime-200 transition-colors duration-300 underline">Learn More →</a>
+            <a href="#learn-more" className="text-violet-300 font-medium hover:text-violet-100 transition-colors duration-300 underline">Learn More →</a>
           </motion.div>
         </div>
       </motion.div>
