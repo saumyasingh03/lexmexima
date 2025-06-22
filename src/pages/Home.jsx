@@ -3,7 +3,7 @@ import Hero from '../components/home/Hero';
 import ProjectsHighlight from '../components/home/ProjectsHighlight';
 import Gallery from '../components/home/Gallery';
 import StatsSection from '../components/home/StatsSection';
-import TestimonialsSection from '../components/home/TestimonialsSection';
+import TestimonialsSection from '../components/home/PrinciplesSection';
 import AboutSection from '../components/home/AboutSection';
 
 const Home = () => {

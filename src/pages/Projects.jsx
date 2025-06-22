@@ -99,9 +99,5 @@ Nari Parcham operates as a zero-funding project. No institutional dependencies. 
           fill="#3d4d2b"
           d="M0,0 C480,80 960,0 1440,80 L1440,80 L0,80 Z"
         />
-      </svg>
-    </motion.div>
-  </div>
-);
 
 export default Projects;

@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -10,7 +10,7 @@ const fadeInUp = {
     transition: {
       delay: i * 0.2,
       duration: 0.6,
-      ease: 'easeOut',
+      ease: "easeOut",
     },
   }),
 };
@@ -18,22 +18,22 @@ const fadeInUp = {
 const ProjectsHighlight = () => {
   const projects = [
     {
-      title: 'Democratising Public Policy Education',
+      title: "Democratising Public Policy Education",
       description:
-        'Making public policy accessible to students, young professionals, and grassroots communities by 2030.',
-      image: '/gallery/im1.jpg'
+        "Making public policy accessible to students, young professionals, and grassroots communities by 2030.",
+      image: "/gallery/im1.jpg",
     },
     {
-      title: 'Grassroot Research: Problem-Led Inquiry',
+      title: "Grassroot Research: Problem-Led Inquiry",
       description:
-        'Challenging top-down research by empowering communities to become co-creators of knowledge.',
-      image: '/gallery/im2.jpeg'
+        "Challenging top-down research by empowering communities to become co-creators of knowledge.",
+      image: "/gallery/im24.jpg",
     },
     {
-      title: 'RTI Advocacy: Empowering Villages Through Information',
+      title: "RTI Advocacy: Empowering Villages Through Information",
       description:
-        'Spreading awareness and demystifying the RTI Act to activate democratic participation in rural India.',
-      image: '/gallery/im3.jpeg'
+        "Spreading awareness and demystifying the RTI Act to activate democratic participation in rural India.",
+      image: "/gallery/im3.jpeg",
     },
   ];
 
@@ -47,11 +47,12 @@ const ProjectsHighlight = () => {
           variants={fadeInUp}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl font-serif sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Projects
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-white/80 max-w-3xl mx-auto">
-            Explore our impactful projects driving positive change in communities worldwide.
+          <p className="text-sm sm:text-base font-serif md:text-lg text-white/80 max-w-3xl mx-auto">
+            Explore our impactful projects driving positive change in
+            communities worldwide.
           </p>
         </motion.div>
 
@@ -67,19 +68,23 @@ const ProjectsHighlight = () => {
               className="relative overflow-hidden rounded-xl group h-64 sm:h-72 md:h-80"
             >
               {/* Background Image */}
-              <img 
-                src={project.image} 
+              <img
+                src={project.image}
                 alt={project.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              
+
               {/* Overlay */}
               <div className="absolute inset-0 bg-primary/70 transition-opacity"></div>
-              
+
               {/* Content */}
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">{project.title}</h3>
-                <p className="text-sm text-white/90 mb-4">{project.description}</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 font-serif">
+                  {project.title}
+                </h3>
+                <p className="text-sm text-white/90 mb-4">
+                  {project.description}
+                </p>
                 <Link
                   to="/projects"
                   className="inline-flex items-center mt-auto text-sm font-medium text-accent hover:text-white transition-colors"
@@ -100,7 +105,7 @@ const ProjectsHighlight = () => {
           className="mt-10 text-center"
         >
           <Link to="/projects">
-            <button className="bg-accent text-primary font-semibold px-6 py-3 rounded-full transition duration-300 hover:bg-white hover:text-primary">
+            <button className="bg-accent text-white font-semibold px-6 py-3 rounded-full transition duration-300 hover:bg-white hover:text-primary">
               View All Projects <span className="ml-1">→</span>
             </button>
           </Link>

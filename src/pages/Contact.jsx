@@ -8,8 +8,8 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="bg-primary text-white py-20">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Nari Parcham</h1>
-          <p className="text-xl text-white/80 max-w-2xl">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 font-serif">Contact Us</h1>
+          <p className="text-xl text-white/80 max-w-2xl font-serif">
             Reach out to join our feminist movement from the margins. Whether you want to volunteer, collaborate, or simply listen and learn—your voice, your care, and your courage are welcome here.
           </p>
         </div>
