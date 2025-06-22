@@ -24,7 +24,10 @@ const Layout = () => {
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <nav className="container mx-auto px-4 py-3 sm:py-4">
           <div className="flex justify-between items-center">
-            <Link to="/" className="text-xl sm:text-2xl font-bold font-serif text-primary">
+            <Link
+              to="/"
+              className="text-xl sm:text-2xl font-bold font-serif text-primary"
+            >
               Nari Parcham
             </Link>
 
@@ -250,16 +253,17 @@ const Layout = () => {
                 Contact
               </h4>
               <p className="text-gray-300 text-sm sm:text-base">
-                123 Nature Street
+                Office No. 30 Nihad Plaza , Opposite Zakir Hussain School, Civil
+                lines, Near AMU
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                Green City, Earth
+                Aligarh 202001
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                info@greeninitiative.org
+                iisppresearch@gmail.com
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                +1 (555) 123-4567
+                +(91) 95287 82464
               </p>
             </div>
             <div>

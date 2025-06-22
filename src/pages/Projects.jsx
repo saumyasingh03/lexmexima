@@ -89,16 +89,7 @@ const Projects = () => (
       transition={{ delay: 0.8, duration: 0.6 }}
       className="relative w-full overflow-hidden"
       style={{ height: "80px", marginTop: "-40px" }}
-    >
-      <svg
-        className="absolute bottom-0 left-0 w-full h-full"
-        viewBox="0 0 1440 80"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path fill="#3d4d2b" d="M0,0 C480,80 960,0 1440,80 L1440,80 L0,80 Z" />
-      </svg>
-    </motion.div>
+    ></motion.div>
   </div>
 );
 
