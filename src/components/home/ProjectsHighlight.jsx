@@ -27,13 +27,13 @@ const ProjectsHighlight = () => {
       title: "Grassroot Research: Problem-Led Inquiry",
       description:
         "Challenging top-down research by empowering communities to become co-creators of knowledge.",
-      image: "/gallery/im24.jpg",
+      image: "/gallery/im3.jpg",
     },
     {
       title: "RTI Advocacy: Empowering Villages Through Information",
       description:
         "Spreading awareness and demystifying the RTI Act to activate democratic participation in rural India.",
-      image: "/gallery/im3.jpeg",
+      image: "/gallery/im24.jpg",
     },
   ];
 

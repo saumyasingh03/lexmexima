@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import ProjectsList from '../components/projects/ProjectsList';
+import ProjectsList from "../components/projects/ProjectsList";
 
 const categories = [
   "All",
@@ -17,66 +17,102 @@ const projectData = [
     title: "Democratising Public Policy Education",
     category: "Education",
     color: "#a3b18a",
-    description: "Making public policy accessible to students, young professionals, and grassroots communities by 2030.",
-    image: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=800&q=80",
-    location: "India"
+    description:
+      "Making public policy accessible to students, young professionals, and grassroots communities by 2030.",
+    image:
+      "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=800&q=80",
+    location: "India",
   },
   {
     id: 2,
     title: "Grassroot Research: Problem-Led Inquiry",
     category: "Innovation",
     color: "#3d4d2b",
-    description: "Challenging top-down research by empowering communities to become co-creators of knowledge.",
-    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
-    location: "India"
+    description:
+      "Challenging top-down research by empowering communities to become co-creators of knowledge.",
+    image:
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+    location: "India",
   },
   {
     id: 3,
     title: "RTI Advocacy: Empowering Villages Through Information",
     category: "Education",
     color: "#a3b18a",
-    description: "Spreading awareness and demystifying the RTI Act to activate democratic participation in rural India.",
-    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
-    location: "India"
+    description:
+      "Spreading awareness and demystifying the RTI Act to activate democratic participation in rural India.",
+    image:
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+    location: "India",
   },
   {
     id: 4,
     title: "Kaam Ka Haq: Labor Rights for Every Worker",
     category: "Innovation",
     color: "#3d4d2b",
-    description: "Educating and empowering informal sector workers on legal labor rights and workplace dignity.",
-    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
-    location: "India"
+    description:
+      "Educating and empowering informal sector workers on legal labor rights and workplace dignity.",
+    image:
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+    location: "India",
   },
   {
     id: 5,
     title: "Nari Parcham: Grassroots Women’s Leadership Initiative",
     category: "Education",
     color: "#a3b18a",
-    description: "Identifying and nurturing local women leaders to influence decision-making from the ground up.",
-    image: "https://images.unsplash.com/photo-1526925539332-aa3b66e35444?auto=format&fit=crop&w=800&q=80",
-    location: "India"
-  }
+    description:
+      "Identifying and nurturing local women leaders to influence decision-making from the ground up.",
+    image:
+      "https://images.unsplash.com/photo-1526925539332-aa3b66e35444?auto=format&fit=crop&w=800&q=80",
+    location: "India",
+  },
 ];
 
-
 const socialIcons = [
-  { href: "#", label: "Twitter", icon: <span role="img" aria-label="Twitter">🐦</span> },
-  { href: "#", label: "Facebook", icon: <span role="img" aria-label="Facebook">📘</span> },
-  { href: "#", label: "Instagram", icon: <span role="img" aria-label="Instagram">📸</span> },
-  { href: "#", label: "LinkedIn", icon: <span role="img" aria-label="LinkedIn">💼</span> },
+  {
+    href: "#",
+    label: "Twitter",
+    icon: (
+      <span role="img" aria-label="Twitter">
+        🐦
+      </span>
+    ),
+  },
+  {
+    href: "#",
+    label: "Facebook",
+    icon: (
+      <span role="img" aria-label="Facebook">
+        📘
+      </span>
+    ),
+  },
+  {
+    href: "#",
+    label: "Instagram",
+    icon: (
+      <span role="img" aria-label="Instagram">
+        📸
+      </span>
+    ),
+  },
+  {
+    href: "#",
+    label: "LinkedIn",
+    icon: (
+      <span role="img" aria-label="LinkedIn">
+        💼
+      </span>
+    ),
+  },
 ];
 
 const Projects = () => {
-  const [selectedCategory, setSelectedCategory] = useState("All");
-  const filtered = selectedCategory === "All"
-    ? projectData
-    : projectData.filter((p) => p.category === selectedCategory);
-
   return (
     <div className="min-h-screen flex flex-col bg-white">
       {/* Header with panoramic image */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -97,55 +133,46 @@ const Projects = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg font-serif">Projects</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg font-serif">
+              Projects
+            </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-xl drop-shadow font-light">
-              Explore our diverse range of impactful projects, from education and agriculture to water, energy, and innovation. Each initiative is designed to foster sustainable development and empower communities.
+              Explore our diverse range of impactful projects, from education
+              and agriculture to water, energy, and innovation. Each initiative
+              is designed to foster sustainable development and empower
+              communities.
             </p>
           </motion.div>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
             className="bg-white/20 backdrop-blur-md rounded-lg p-6 mt-10 md:mt-0 md:ml-8 md:max-w-xs shadow-lg border border-white/30"
           >
-            <h2 className="text-xl font-semibold text-white mb-2 font-serif">Our Mission</h2>
+            <h2 className="text-xl font-semibold text-white mb-2 font-serif">
+              What We Do
+            </h2>
             <p className="text-white/90 text-sm mb-2">
-              To create lasting positive change by supporting projects that nurture people and the planet.
+              We train, we listen, we mobilize. But most importantly, we build
+              collective feminist consciousness in places where it has long been
+              denied. Nari Parcham operates as a zero-funding project. No
+              institutional dependencies. No CSR strings. Just women standing
+              beside women, building knowledge that is relevant, bold, and
+              life-affirming.
             </p>
-            <a href="#learn-more" className="text-violet-300 font-medium hover:text-violet-100 transition-colors duration-300 underline">Learn More →</a>
+            <a
+              href="#learn-more"
+              className="text-violet-300 font-medium hover:text-violet-100 transition-colors duration-300 underline"
+            >
+              Learn More →
+            </a>
           </motion.div>
         </div>
       </motion.div>
 
-      {/* Filter Navigation */}
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6, duration: 0.6 }}
-        className="bg-[#f4f4f4] py-8 flex justify-center border-b border-gray-200"
-      >
-        <div className="flex flex-wrap gap-4 px-4">
-          {categories.map((cat) => (
-            <motion.button
-              key={cat}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className={`px-6 py-2.5 rounded-full font-semibold transition-all duration-300 shadow-sm focus:outline-none ${
-                selectedCategory === cat
-                  ? 'bg-accent text-white shadow-lg'
-                  : 'bg-white text-gray-700 hover:bg-gray-100'
-              }`}
-              onClick={() => setSelectedCategory(cat)}
-            >
-              {cat}
-            </motion.button>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Projects Grid */}
+      {/* ── Cards Grid ── */}
       <div className="flex-1 bg-white">
-        <ProjectsList projects={filtered} />
+        <ProjectsList projects={projectData} />
       </div>
     </div>
   );

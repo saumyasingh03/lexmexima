@@ -5,8 +5,13 @@ import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const GalleryCarousel = () => {
-  const images = Array.from({ length: 18 }, (_, i) => `/gallery_carousel/gi${i + 1}.webp`);
-  const slides = Array.from({ length: 3 }, (_, i) => images.slice(i * 6, (i + 1) * 6));
+  const images = Array.from(
+    { length: 18 },
+    (_, i) => `/gallery/im${i + 1}.jpg`
+  );
+  const slides = Array.from({ length: 3 }, (_, i) =>
+    images.slice(i * 6, (i + 1) * 6)
+  );
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -41,7 +46,9 @@ const GalleryCarousel = () => {
     <section className="relative bg-white py-6 pb-20 px-2 sm:px-10 text-gray-900">
       <div className="w-full max-w-7xl mx-auto px-2 md:px-8 select-none">
         <div className="flex flex-col md:flex-row justify-between items-center mb-6 px-2 sm:px-5">
-          <h2 className="text-4xl font-semibold text-primary font-serif">Our Gallery</h2>
+          <h2 className="text-4xl font-semibold text-primary font-serif">
+            Our Gallery
+          </h2>
           <Link
             to="/gallery"
             className="text-md font-semibold flex flex-row items-center gap-1 mt-3 hover:text-accent hover:scale-110 transition-transform"
@@ -93,7 +100,10 @@ const GalleryCarousel = () => {
               className="keen-slider"
             >
               {slides.map((group, idx) => (
-                <div key={idx} className="keen-slider__slide grid grid-cols-4 gap-4">
+                <div
+                  key={idx}
+                  className="keen-slider__slide grid grid-cols-4 gap-4"
+                >
                   {group.map((src, i) => {
                     const widthClasses = [
                       "col-span-1",
@@ -106,7 +116,9 @@ const GalleryCarousel = () => {
                     return (
                       <div
                         key={i}
-                        className={`overflow-hidden h-[260px] sm:h-[300px] ${widthClasses[i % widthClasses.length]}`}
+                        className={`overflow-hidden h-[260px] sm:h-[300px] ${
+                          widthClasses[i % widthClasses.length]
+                        }`}
                       >
                         <img
                           src={src}
