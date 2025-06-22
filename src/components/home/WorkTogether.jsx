@@ -57,7 +57,7 @@ const WorkTogether = () => {
                 Come with humility—expect to learn as much as you teach.
               </p>
               <a
-                href="/join#volunteer"
+                href="https://forms.gle/QVgxw657fzfKUW9WA"
                 className="text-accent font-medium hover:underline mt-auto"
               >
                 Sign up →
@@ -89,7 +89,7 @@ const WorkTogether = () => {
                 and sit with stories that unsettle and expand you.
               </p>
               <a
-                href="/join#learners"
+                href="https://forms.gle/QVgxw657fzfKUW9WA"
                 className="text-accent font-medium hover:underline mt-auto"
               >
                 Join a circle →
@@ -121,7 +121,7 @@ const WorkTogether = () => {
                 class and geography.
               </p>
               <a
-                href="/join#collaborators"
+                href="https://forms.gle/QVgxw657fzfKUW9WA"
                 className="text-accent font-medium hover:underline mt-auto"
               >
                 Partner with us →
@@ -133,7 +133,7 @@ const WorkTogether = () => {
         {/* call-to-action button */}
         <div className="mt-16 text-center">
           <a
-            href="/join"
+            href="https://forms.gle/QVgxw657fzfKUW9WA"
             className="inline-block bg-accent text-white font-semibold px-8 py-3 rounded-full hover:bg-accent-dark transition-colors"
           >
             Join Us →

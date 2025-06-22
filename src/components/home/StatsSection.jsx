@@ -119,19 +119,6 @@ const StatsSection = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Logos */}
-        <div className="flex justify-center gap-12 mt-16">
-          <motion.img
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true }}
-            src="/home/statsbottom.jpg"
-            alt="Partner logo"
-            className="h-10 sm:h-12 object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-          />
-        </div>
       </div>
     </section>
   );

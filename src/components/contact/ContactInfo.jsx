@@ -24,7 +24,10 @@ const ContactInfo = () => {
           <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
           <div>
             <h3 className="font-semibold text-gray-800">Phone</h3>
-            <p className="text-gray-600">+91 95287 82464</p>
+            <p className="text-gray-600">
+              Dr Qudsiya Anjum- 9837378699 <br />
+              Wajahat Mazahar Khan- 9058564603
+            </p>
           </div>
         </div>
 
@@ -32,7 +35,7 @@ const ContactInfo = () => {
           <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
           <div>
             <h3 className="font-semibold text-gray-800">Email</h3>
-            <p className="text-gray-600">iisppresearch@gmail.com</p>
+            <p className="text-gray-600">parchamnari@gmail.com</p>
           </div>
         </div>
 

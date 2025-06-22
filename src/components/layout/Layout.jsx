@@ -21,14 +21,19 @@ const Layout = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-white shadow-sm sticky top-0 z-50">
+      <header className="bg-[#2B0D37] shadow-sm sticky top-0 z-50">
         <nav className="container mx-auto px-4 py-3 sm:py-4">
           <div className="flex justify-between items-center">
             <Link
               to="/"
-              className="text-xl sm:text-2xl font-bold font-serif text-primary"
+              className="flex items-center gap-2 text-xl sm:text-2xl font-bold font-serif text-white"
             >
-              Nari Parcham
+              <img
+                src="/images/logo.png"
+                alt="Logo"
+                className="h-10 w-10 object-contain"
+              />
+              <span>Nari Parcham</span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -38,8 +43,8 @@ const Layout = () => {
                   to="/"
                   className={`font-medium transition-colors ${
                     isActive("/")
-                      ? "text-primary"
-                      : "text-gray-700 hover:text-primary"
+                      ? "text-white underline-offset-4 underline decoration-white"
+                      : "text-white hover:text-secondary-light"
                   }`}
                 >
                   Home
@@ -50,8 +55,8 @@ const Layout = () => {
                   to="/about"
                   className={`font-medium transition-colors ${
                     isActive("/about")
-                      ? "text-primary"
-                      : "text-gray-700 hover:text-primary"
+                      ? "text-white underline-offset-4 underline decoration-white"
+                      : "text-white hover:text-secondary-light"
                   }`}
                 >
                   About
@@ -62,8 +67,8 @@ const Layout = () => {
                   to="/projects"
                   className={`font-medium transition-colors ${
                     isActive("/projects")
-                      ? "text-primary"
-                      : "text-gray-700 hover:text-primary"
+                      ? "text-white underline-offset-4 underline decoration-white"
+                      : "text-white hover:text-secondary-light"
                   }`}
                 >
                   Projects
@@ -74,8 +79,8 @@ const Layout = () => {
                   to="/gallery"
                   className={`font-medium transition-colors ${
                     isActive("/gallery")
-                      ? "text-primary"
-                      : "text-gray-700 hover:text-primary"
+                      ? "text-white underline-offset-4 underline decoration-white"
+                      : "text-white hover:text-secondary-light"
                   }`}
                 >
                   Gallery
@@ -86,8 +91,8 @@ const Layout = () => {
                   to="/contact"
                   className={`font-medium transition-colors ${
                     isActive("/contact")
-                      ? "text-primary"
-                      : "text-gray-700 hover:text-primary"
+                      ? "text-white underline-offset-4 underline decoration-white"
+                      : "text-white hover:text-secondary-light"
                   }`}
                 >
                   Contact
@@ -253,17 +258,17 @@ const Layout = () => {
                 Contact
               </h4>
               <p className="text-gray-300 text-sm sm:text-base">
-                Office No. 30 Nihad Plaza , Opposite Zakir Hussain School, Civil
-                lines, Near AMU
+                13/70, Pakka bagh
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                Aligarh 202001
+                Saharanpur, UP
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                iisppresearch@gmail.com
+                parchamnari@gmail.com
               </p>
               <p className="text-gray-300 text-sm sm:text-base">
-                +(91) 95287 82464
+                Dr Qudsiya Anjum- 9837378699 <br />
+                Wajahat Mazahar Khan- 9058564603
               </p>
             </div>
             <div>

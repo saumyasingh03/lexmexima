@@ -2,7 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { images } from "../components/about/images.js";
 import HeroSection from "../components/about/HeroSection.jsx";
-import Description from "../components/about/Description.jsx";
+import Description1 from "../components/about/Description1.jsx";
+import Description2 from "../components/about/Description2.jsx";
 import StatsSection from "../components/about/StatsSection.jsx";
 import GalleryCarousel from "../components/about/Gallery.jsx";
 
@@ -26,11 +27,11 @@ const About = () => {
     <div className="min-h-screen">
       <HeroSection />
       <section className="relative w-full">
-        <img
+        {/* <img
           src={images.top}
           className="w-full absolute   -z-10"
           alt="Top decoration"
-        />
+        /> */}
 
         <motion.div
           className="pt-20 md:pt-32 md:mb-15 lg:mb-28"
@@ -39,7 +40,20 @@ const About = () => {
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeInUpVariant}
         >
-          <Description />
+          <div className="container mx-auto px-4 md:px-8 max-w-7xl">
+            <h2 className="text-center text-3xl sm:text-4xl font-serif md:text-5xl font-bold text-primary mb-4">
+              Building Change with Every Step
+            </h2>
+            <p className="text-gray-600 max-w-3xl font-serif mx-auto text-sm sm:text-base">
+              Formally registered as Jagook Mahila Parcham Sanstha, Saharanpur
+              (U.P.), Nari Parcham has always been more than an organisation. It
+              is a movement—one that belongs to the women who built it, not to
+              donors or bureaucracies.
+            </p>
+          </div>
+
+          <Description1 />
+          <Description2 />
         </motion.div>
 
         <motion.div
