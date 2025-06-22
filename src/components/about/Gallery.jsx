@@ -42,12 +42,12 @@ const GalleryCarousel = () => {
       <section className="relative bg-white py-6 px-10 text-gray-900">
         <div className="w-full max-w-7xl mx-auto px-4 md:px-8 select-none">
           <div className="flex flex-col md:flex-row justify-between items-center mb-6 px-5">
-            <h2 className="text-4xl font-[playfair] font-semibold text-gray-900">Our Gallery</h2>
+            <h2 className="text-4xl font-semibold text-gray-900 font-serif">Our Gallery</h2>
             <Link
                 to="/gallery"
                 className="text-md font-semibold flex flex-row items-center gap-1 mt-3 hover:text-green-800 hover:scale-110 transition-transform"
             >
-              <p className="font-[montserrat] text-base">Learn More</p>
+              <p className="text-base">Learn More</p>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>

@@ -72,7 +72,7 @@ const GalleryCarousel = () => {
           variants={fadeInUp}
           className="flex flex-col md:flex-row justify-between items-center mb-10 px-4"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4 md:mb-0">
+          <h2 className="text-3xl font-serif sm:text-4xl font-bold text-primary mb-4 md:mb-0">
             Our Gallery
           </h2>
           <Link

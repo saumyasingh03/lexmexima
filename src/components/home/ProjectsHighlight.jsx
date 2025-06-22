@@ -47,10 +47,10 @@ const ProjectsHighlight = () => {
           variants={fadeInUp}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl font-serif sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Projects
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-white/80 max-w-3xl mx-auto">
+          <p className="text-sm sm:text-base font-serif md:text-lg text-white/80 max-w-3xl mx-auto">
             Explore our impactful projects driving positive change in communities worldwide.
           </p>
         </motion.div>
@@ -78,7 +78,7 @@ const ProjectsHighlight = () => {
               
               {/* Content */}
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">{project.title}</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 font-serif">{project.title}</h3>
                 <p className="text-sm text-white/90 mb-4">{project.description}</p>
                 <Link
                   to="/projects"
