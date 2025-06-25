@@ -28,15 +28,15 @@ const About = () => {
       <HeroSection />
       <motion.div
         initial="initial"
-          whileInView="animate"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={fadeInUpVariant}
+        whileInView="animate"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={fadeInUpVariant}
         className="container mx-auto py-20 px-4 md:px-8 max-w-7xl"
       >
         <h2 className="text-center text-3xl sm:text-4xl font-serif md:text-5xl font-bold text-primary mb-4">
           Building Change with Every Step
         </h2>
-        <p className="text-gray-600 max-w-3xl font-serif mx-auto text-sm sm:text-base">
+        <p className=" text-center text-gray-600 max-w-3xl font-serif mx-auto text-sm sm:text-base">
           Formally registered as Jagook Mahila Parcham Sanstha, Saharanpur
           (U.P.), Nari Parcham has always been more than an organisation. It is
           a movement—one that belongs to the women who built it, not to donors
@@ -51,18 +51,6 @@ const About = () => {
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeInUpVariant}
         >
-          <div className="container mx-auto px-4 md:px-8 max-w-7xl">
-            <h2 className="text-center text-3xl sm:text-4xl font-serif md:text-5xl font-bold text-primary mb-4">
-              Building Change with Every Step
-            </h2>
-            <p className="text-gray-600 max-w-3xl font-serif mx-auto text-sm sm:text-base">
-              Formally registered as Jagook Mahila Parcham Sanstha, Saharanpur
-              (U.P.), Nari Parcham has always been more than an organisation. It
-              is a movement—one that belongs to the women who built it, not to
-              donors or bureaucracies.
-            </p>
-          </div>
-
           <Description1 />
           <Description2 />
         </motion.div>

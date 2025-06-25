@@ -37,7 +37,7 @@ const Description = () => {
           feminist theory, he brings new energy that bridges local feminist
           struggle with intersectional thinking and public policy reform. <br />
           Nari Parcham is intergenerational, locally rooted, and globally
-          conscious. We are not an NGO—we are a movement without gatekeepers,
+          conscious. We are not an NGO we are a movement without gatekeepers,
           without permission, and without apology. We are, and always will be,
           unapologetically feminist.
         </p>

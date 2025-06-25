@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import { Outlet, Link, useLocation } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
+import { useEffect } from "react";
 
 const Layout = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, [location.pathname]);
 
   const navLinks = [
     { to: "/", label: "Home" },

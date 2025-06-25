@@ -54,7 +54,7 @@ const WorkTogether = () => {
               <p className="text-gray-600 mb-4 grow">
                 Lawyers, social workers, teachers & community organizers help
                 run legal literacy circles, healing spaces and skill workshops.
-                Come with humility—expect to learn as much as you teach.
+                Come with humility expect to learn as much as you teach.
               </p>
               <a
                 href="https://forms.gle/QVgxw657fzfKUW9WA"
@@ -85,7 +85,7 @@ const WorkTogether = () => {
               </h4>
               <p className="text-gray-600 mb-4 grow">
                 Students, researchers and policy enthusiasts are welcome. This
-                isn’t a classroom—it’s a community. Unlearn syllabus-safe ideas
+                isn’t a classroom it’s a community. Unlearn syllabus-safe ideas
                 and sit with stories that unsettle and expand you.
               </p>
               <a
@@ -116,7 +116,7 @@ const WorkTogether = () => {
                 Collaborators
               </h4>
               <p className="text-gray-600 mb-4 grow">
-                Artists, media makers and educators—co-host workshops, build
+                Artists, media makers and educators co-host workshops, build
                 traveling libraries or amplify women’s voices across caste,
                 class and geography.
               </p>

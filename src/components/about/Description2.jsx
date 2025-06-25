@@ -10,7 +10,7 @@ const Description = () => {
           Why We Do This
         </h2>
         <p className="text-gray-700 text-lg leading-relaxed max-w-md mx-auto lg:mx-0">
-          Because silence is not natural—it is enforced. Because women at the
+          Because silence is not natural it is enforced. Because women at the
           margins are not waiting to be empowered; they are demanding dignity.
           Domestic violence, caste shame, unpaid care and religious policing are
           not private problems; they are political. We do this for the Dalit

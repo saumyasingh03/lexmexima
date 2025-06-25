@@ -46,14 +46,13 @@ const HeroSection = () => {
             Why We Exist: Feminism for the Margins
           </h2>
           <p className="text-white/90 text-sm mb-2">
-            Nari Parcham exists to amplify the voices of women at the
-            margins—Dalit, Muslim, Adivasi, queer, working-class who are often
-            ignored by mainstream feminism. We challenge structural oppression
-            rooted in caste, religion, patriarchy, and poverty by creating
-            spaces for women to share their stories, find solidarity, and
-            reclaim power. Our feminism is grounded in lived realities,
-            collective healing, and political resistance—not charity, but
-            long-overdue justice.
+            Nari Parcham exists to amplify the voices of women at the margins
+            Dalit, Muslim, Adivasi, queer, working-class who are often ignored
+            by mainstream feminism. We challenge structural oppression rooted in
+            caste, religion, patriarchy, and poverty by creating spaces for
+            women to share their stories, find solidarity, and reclaim power.
+            Our feminism is grounded in lived realities, collective healing, and
+            political resistance not charity, but long-overdue justice.
           </p>
           <a
             href="#learn-more"
