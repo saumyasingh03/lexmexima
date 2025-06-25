@@ -43,13 +43,12 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg font-serif">
             About Us
           </h1>
-          <p className="text-lg md:text-xxl text-white/90 max-w-xl drop-shadow font-light">
-            Nari Parcham began in 1999 as a quiet but powerful act of defiance
-            in Jahruk village, Uttar Pradesh. Led by Dr. Qudsia Anjum, a teacher
-            and grassroots activist, the initiative gave voice to women who had
-            long been silenced by domestic violence, caste-based discrimination,
-            and the invisible burden of unpaid care work. Even under fear and
-            social surveillance, the women of Jahruk chose to speak up. <br />
+          <p className="text-lg md:text-xl text-white/90 max-w-xl drop-shadow font-light">
+            Nari Parcham began in 1999 as a small act of defiance in Jahruk,
+            Uttar Pradesh. Founded by Dr. Qudsia Anjum, it created a space for
+            women to speak the unspeakable about domestic violence, caste
+            humiliation, and unpaid care work. In a climate of fear and
+            surveillance, these women raised their voices anyway.
           </p>
         </motion.div>
         <motion.div
@@ -62,13 +61,14 @@ const HeroSection = () => {
             Why We Exist: Feminism for the Margins
           </h2>
           <p className="text-white/90 text-sm mb-2">
-            Nari Parcham exists to amplify the voices of women at the margins
-            Dalit, Muslim, Adivasi, queer, working-class who are often ignored
-            by mainstream feminism. We challenge structural oppression rooted in
-            caste, religion, patriarchy, and poverty by creating spaces for
-            women to share their stories, find solidarity, and reclaim power.
-            Our feminism is grounded in lived realities, collective healing, and
-            political resistance not charity, but long-overdue justice.
+            Nari Parcham exists to amplify the voices of women at the
+            margins—Dalit, Muslim, Adivasi, queer, working-class who are often
+            ignored by mainstream feminism. We challenge structural oppression
+            rooted in caste, religion, patriarchy, and poverty by creating
+            spaces for women to share their stories, find solidarity, and
+            reclaim power. Our feminism is grounded in lived realities,
+            collective healing, and political resistance—not charity, but
+            long-overdue justice.
           </p>
           <a
             href="#learn-more"

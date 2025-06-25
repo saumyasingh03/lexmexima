@@ -41,7 +41,7 @@ const About = () => {
             <p className="text-gray-600 max-w-3xl font-serif mx-auto text-sm sm:text-base">
               Formally registered as Jagook Mahila Parcham Sanstha, Saharanpur
               (U.P.), Nari Parcham has always been more than an organisation. It
-              is a movement—one that belongs to the women who built it, not to
+              is a movement one that belongs to the women who built it, not to
               donors or bureaucracies.
             </p>
           </div>
