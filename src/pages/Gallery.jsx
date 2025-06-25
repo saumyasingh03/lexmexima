@@ -89,20 +89,20 @@ const Gallery = () => {
 
   return (
     <div
-      className="min-h-screen bg-gradient-to-b from-[#202d1a] to-[#202d1a] text-white flex flex-col"
+      className="min-h-screen text-white flex flex-col"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       ref={scrollRef}
     >
       {/* Masonry Gallery Grid */}
-      <div className="flex-1 bg-[#5b5e5a] pt-12 pb-10 px-4 md:px-20">
+      <div className="flex-1 bg-primary/75 pt-12 pb-10 px-4 md:px-20">
         <div className="columns-1 sm:columns-2 md:columns-3 gap-6 space-y-4">
           {images.map((img, idx) => (
             <img
               key={idx}
               src={img}
               alt={`Gallery ${idx + 1}`}
-              className="w-full mb-4 rounded-xl shadow-lg break-inside-avoid"
+              className="w-full mb-4 rounded-xl shadow-xl border border-primary/45 break-inside-avoid"
               loading="lazy"
             />
           ))}

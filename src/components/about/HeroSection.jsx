@@ -2,28 +2,13 @@ import React from "react";
 import { images } from "./images.js";
 import { motion } from "framer-motion";
 
-const FrostedTextBgOutline = ({ text }) => {
-  return (
-    <div
-      className="frosted-container px-4 sm:px-6 lg:px-9 py-2 sm:py-3 lg:py-4 bg-white/10 rounded-full backdrop-blur-md inline-flex justify-start items-start gap-2.5 text-white"
-      style={{
-        border: "1px solid rgba(255, 255, 255, 1)",
-      }}
-    >
-      <p className="font-[montserrat] text-xl sm:text-xl lg:text-2xl font-normal">
-        {text}
-      </p>
-    </div>
-  );
-};
-
 const HeroSection = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="relative w-full h-[90vh] flex items-end justify-center overflow-hidden"
+      className="relative w-full md:h-[470px] lg:h-[550px] flex items-end justify-center overflow-hidden"
     >
       <motion.img
         initial={{ scale: 1.2 }}
@@ -56,7 +41,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="bg-white/20 backdrop-blur-md rounded-lg p-6 mt-6 md:mt-0 md:ml-8 max-w-xs shadow-lg border border-white/30"
+          className="bg-white/20 backdrop-blur-md rounded-lg p-6 mt-10 md:mt-0 md:ml-8 md:max-w-xs shadow-lg border border-white/30"
         >
           <h2 className="text-xl font-semibold text-white font-serif mb-2">
             Why We Exist: Feminism for the Margins
