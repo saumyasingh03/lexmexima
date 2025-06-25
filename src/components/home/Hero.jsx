@@ -123,14 +123,14 @@ const Hero = () => {
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-6">
               <Link
                 to="/projects"
-                className="group relative px-8 py-3 bg-accent text-primary font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105"
+                className="group relative px-8 py-3 bg-accent text-white font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:text-accent"
               >
                 <span className="relative z-10">Our Work</span>
                 <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
               </Link>
               <Link
                 to="/about"
-                className="group relative px-8 py-3 border-2 border-white text-white font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105"
+                className="group relative px-8 py-3 border-2 border-white text-white hover:text-accent font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105"
               >
                 <span className="relative z-10">Learn More</span>
                 <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>

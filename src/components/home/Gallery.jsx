@@ -77,7 +77,7 @@ const GalleryCarousel = () => {
           </h2>
           <Link
             to="/gallery"
-            className="inline-flex items-center gap-1 bg-accent text-primary px-5 py-2 rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-colors"
+            className="inline-flex items-center gap-1 bg-accent text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-primary hover:text-white transition-colors"
           >
             View All <span className="ml-1">→</span>
           </Link>

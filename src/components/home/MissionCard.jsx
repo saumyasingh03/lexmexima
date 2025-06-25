@@ -40,14 +40,14 @@ const MissionCard = () => {
           whileHover={{ scale: 1.05 }}
           className="bg-white/10 p-4 rounded-lg text-center backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
         >
-          <div className="text-accent-dark text-3xl font-bold mb-2">10K+</div>
+          <div className="text-accent text-3xl font-bold mb-2">10K+</div>
           <div className="text-sm font-medium">People Reach</div>
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.05 }}
           className="bg-white/10 p-4 rounded-lg text-center backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
         >
-          <div className="text-accent-dark text-3xl font-bold mb-2">21+</div>
+          <div className="text-accent text-3xl font-bold mb-2">21+</div>
           <div className="text-sm font-medium">Active States</div>
         </motion.div>
       </motion.div>
@@ -60,7 +60,7 @@ const MissionCard = () => {
       >
         <Link
           to="/about"
-          className="group inline-flex items-center gap-2 bg-accent text-primary px-6 py-3 rounded-full text-sm font-medium hover:bg-white transition-all duration-300 hover:scale-105"
+          className="group inline-flex items-center gap-2 bg-accent text-white hover:text-primary px-6 py-3 rounded-full text-sm font-medium hover:bg-white transition-all duration-300 hover:scale-105"
         >
           Our Story
           <motion.span
