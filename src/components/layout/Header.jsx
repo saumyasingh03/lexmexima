@@ -1,16 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Header = ({ navLinks, toggleMobileMenu, mobileMenuOpen, isActive }) => {
+const navLinks = [
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
+  { to: "/projects", label: "Projects" },
+  { to: "/gallery", label: "Gallery" },
+  { to: "/contact", label: "Contact" },
+];
+
+const Header = ({ toggleMobileMenu, mobileMenuOpen, isActive }) => {
   return (
-    <header className="bg-primary shadow-sm sticky top-0 z-50">
-      <nav className="py-3 sm:py-4">
-        <div className="flex justify-between mx-6 md:mx-12 items-center">
+    <header className="bg-[#2B0D37] shadow-sm sticky top-0 z-50">
+      <nav className="container mx-auto px-4 py-3 sm:py-4">
+        <div className="flex justify-between items-center">
           <Link
             to="/"
-            className="text-xl sm:text-2xl font-bold font-serif text-white"
+            className="flex items-center gap-2 text-xl sm:text-2xl font-bold font-serif text-white"
           >
-            Nari Parcham
+            <img
+              src="/images/logo.png"
+              alt="Logo"
+              className="h-10 w-10 object-contain"
+            />
+            <span>Nari Parcham</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -21,10 +34,8 @@ const Header = ({ navLinks, toggleMobileMenu, mobileMenuOpen, isActive }) => {
                   to={to}
                   className={`font-medium transition-colors ${
                     isActive(to)
-                      ? "text-violet-200 underline decoration-violet-200 underline-offset-4"
-                      : to === "/"
-                      ? "text-white hover:underline decoration-white underline-offset-4"
-                      : "text-white hover:underline decoration-white underline-offset-4"
+                      ? "text-white underline-offset-4 underline decoration-white"
+                      : "text-white hover:text-secondary-light"
                   }`}
                 >
                   {label}
@@ -34,8 +45,8 @@ const Header = ({ navLinks, toggleMobileMenu, mobileMenuOpen, isActive }) => {
           </ul>
 
           {/* Mobile Menu Button */}
-          <div
-            className="md:hidden focus:outline-none text-white bg-primary hover:scale-110 transition-transform"
+          <button
+            className="md:hidden focus:outline-none text-white bg-primary hover:bg-accent"
             onClick={toggleMobileMenu}
             aria-label="Toggle menu"
           >
@@ -53,21 +64,21 @@ const Header = ({ navLinks, toggleMobileMenu, mobileMenuOpen, isActive }) => {
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
-          </div>
+          </button>
         </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden absolute top-10 left-0 right-0 shadow-lg">
-            <ul className="flex flex-col space-y-3 px-6 py-4 bg-primary mt-3">
+          <div className="md:hidden absoluet py-4 bg-white border-t mt-3">
+            <ul className="flex flex-col space-y-3 px-4">
               {navLinks.map(({ to, label }) => (
                 <li key={to}>
                   <Link
                     to={to}
-                    className={`block font-semibold transition-colors ${
+                    className={`block font-medium transition-colors ${
                       isActive(to)
-                        ? "text-violet-300"
-                        : "text-white hover:text-primary"
+                        ? "text-primary"
+                        : "text-gray-700 hover:text-primary"
                     }`}
                     onClick={toggleMobileMenu}
                   >
