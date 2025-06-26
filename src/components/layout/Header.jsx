@@ -46,7 +46,7 @@ const Header = ({ toggleMobileMenu, mobileMenuOpen, isActive }) => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden focus:outline-none text-white bg-primary hover:bg-accent"
+            className="md:hidden focus:outline-none transition-colors duration-200 text-white bg-primary hover:bg-accent/20 hover:border-white/0"
             onClick={toggleMobileMenu}
             aria-label="Toggle menu"
           >
@@ -69,16 +69,16 @@ const Header = ({ toggleMobileMenu, mobileMenuOpen, isActive }) => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden absoluet py-4 bg-white border-t mt-3">
-            <ul className="flex flex-col space-y-3 px-4">
+          <div className="md:hidden absolute py-4 w-full bg-primary/75 border-b-4 border-accent/20 left-0 backdrop-blur-md mt-3">
+            <ul className="flex flex-col">
               {navLinks.map(({ to, label }) => (
                 <li key={to}>
                   <Link
                     to={to}
-                    className={`block font-medium transition-colors ${
+                    className={`block py-1 px-4 font-medium transition-colors ${
                       isActive(to)
-                        ? "text-primary"
-                        : "text-gray-700 hover:text-primary"
+                        ? "text-white bg-accent-dark/20"
+                      : "text-white hover:bg-purple-100 hover:text-secondary "
                     }`}
                     onClick={toggleMobileMenu}
                   >
