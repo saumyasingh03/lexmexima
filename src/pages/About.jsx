@@ -34,13 +34,13 @@ const About = () => {
         className="container mx-auto py-20 px-4 md:px-8 max-w-7xl"
       >
         <h2 className="text-center text-3xl sm:text-4xl font-serif md:text-5xl font-bold text-primary mb-4">
-          Building Change with Every Step
+         Rewriting the Future of Justice.
+         Rising Beyond Barriers.
         </h2>
         <p className=" text-center text-gray-600 max-w-3xl font-serif mx-auto text-sm sm:text-base">
-          Formally registered as Jagook Mahila Parcham Sanstha, Saharanpur
-          (U.P.), Nari Parcham has always been more than an organisation. It is
-          a movement—one that belongs to the women who built it, not to donors
-          or bureaucracies.
+          Lax Maxima builds a new generation of legal and civic leaders—youth from underserved communities who carry their truths,
+           their struggles, and their strength into every courtroom and council.
+          Where the system once excluded, they now lead—with purpose, power, and a vision for a just tomorrow.
         </p>
       </motion.div>
       <section className="relative w-full">

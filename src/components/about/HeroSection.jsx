@@ -29,11 +29,10 @@ const HeroSection = () => {
             About Us
           </h1>
           <p className="text-lg md:text-xl text-white/90 max-w-xl drop-shadow font-light">
-            Nari Parcham began in 1999 as a small act of defiance in Jahruk,
-            Uttar Pradesh. Founded by Dr. Qudsia Anjum, it created a space for
-            women to speak the unspeakable about domestic violence, caste
-            humiliation, and unpaid care work. In a climate of fear and
-            surveillance, these women raised their voices anyway.
+            Lax Maxima was founded as a bold step toward equity and representation in India’s legal and civic systems.
+            Established to uplift students from underserved regions, the academy offers a platform for those historically 
+            excluded from careers in law, judiciary, and public leadership. In a landscape often marked by unequal access
+            and systemic barriers, Lax Maxima stands as a space for learning, empowerment, and change.
           </p>
         </motion.div>
         <motion.div
@@ -43,16 +42,14 @@ const HeroSection = () => {
           className="bg-white/20 backdrop-blur-md rounded-lg p-6 mt-10 md:mt-0 md:ml-8 md:max-w-xs shadow-lg border border-white/30"
         >
           <h2 className="text-xl font-semibold text-white font-serif mb-2">
-            Why We Exist: Feminism for the Margins
+            Why We Exist: Justice for the Margins
           </h2>
           <p className="text-white/90 text-sm mb-2">
-            Nari Parcham exists to amplify the voices of women at the margins
-            Dalit, Muslim, Adivasi, queer, working-class who are often ignored
-            by mainstream feminism. We challenge structural oppression rooted in
-            caste, religion, patriarchy, and poverty by creating spaces for
-            women to share their stories, find solidarity, and reclaim power.
-            Our feminism is grounded in lived realities, collective healing, and
-            political resistance not charity, but long-overdue justice.
+            Lax Maxima exists to amplify the voices of aspiring leaders from the margins — first-generation learners,
+            students from rural and semi-urban areas, Dalit, Adivasi, and economically disadvantaged communities. 
+            We challenge the barriers that limit access to legal education and civic leadership by creating inclusive,
+            rigorous, and community-rooted learning environments. Our mission is grounded in justice, empathy, and the belief 
+            that legal knowledge and civic power must belong to all — not just a privileged few.
           </p>
           <a
             href="#learn-more"
