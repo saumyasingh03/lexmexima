@@ -40,116 +40,124 @@ const TypingText = React.memo(({ lines, className }) => {
     if (charIndex <= currentLine.length) {
       const timeout = setTimeout(() => {
         setDisplayedText((prev) => {
-          const updated = [...prev];
-          updated[lineIndex] = currentLine.slice(0, charIndex);
-          return updated;
+          const newDisplayedText = [...prev];
+          newDisplayedText[lineIndex] = currentLine.substring(0, charIndex);
+          return newDisplayedText;
         });
-        setCharIndex((c) => c + 1);
-      }, 50);
+        setCharIndex((prevCharIndex) => prevCharIndex + 1);
+      }, 50); // Typing speed
       return () => clearTimeout(timeout);
     } else {
-      const timeout = setTimeout(() => {
-        setLineIndex((l) => l + 1);
+      // Line completed, move to next line or restart
+      const lineDelay = setTimeout(() => {
+        setLineIndex((prevLineIndex) => (prevLineIndex + 1) % lines.length);
         setCharIndex(0);
-      }, 300);
-      return () => clearTimeout(timeout);
+        if (lineIndex === lines.length - 1) {
+          // Reset all lines if it's the last one to simulate full retype
+          setDisplayedText(["", ""]);
+        }
+      }, 2000); // Delay before starting next line or restarting
+      return () => clearTimeout(lineDelay);
     }
   }, [charIndex, lineIndex, lines]);
 
   return (
-    <div className={`${className} min-h-[4rem] sm:min-h-[6rem]`}>
-      {lines.map((_, i) => (
-        <h1
-          key={i}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300"
-        >
-          {displayedText[i]}
-          {i === lineIndex && <span className="animate-pulse">|</span>}
-        </h1>
+    <div className={className}>
+      {lines.map((_, idx) => (
+        <span key={idx} className="block">
+          {displayedText[idx]}
+          {idx === lineIndex && charIndex <= lines[lineIndex].length && (
+            <span className="animate-blink">|</span>
+          )}
+        </span>
       ))}
     </div>
   );
 });
 
-TypingText.displayName = "TypingText";
-
 const Hero = () => {
   const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 500], [0, 100]);
-  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+  const yText = useTransform(scrollY, [0, 500], [0, -100]);
+  const opacityText = useTransform(scrollY, [0, 300], [1, 0]);
 
-  const missionLines = [
-    "We’re On A Mission",
-    "To Build Feminist Power",
-    "From the Margins",
+  const typingLines = [
+    "Empowering Voices.",
+    "Ensuring Justice.",
+    "Building Leaders.",
   ];
 
   return (
-    <section className="relative z-20 flex-grow w-full min-h-[90vh] bg-[url('/home/herobg.jpg')] bg-cover bg-center bg-fixed">
-      {/* Enhanced gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60 backdrop-blur-sm z-10"></div>
+    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary to-accent">
+      {/* Background Image/Overlay */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/home/hero-bg.webp"
+          alt="Abstract legal background"
+          className="w-full h-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-black opacity-40"></div>
+      </div>
 
-      {/* Animated background elements */}
-      <motion.div className="absolute inset-0 z-0" style={{ y, opacity }}>
-        <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-transparent"></div>
-      </motion.div>
-
-      <div className="relative z-20 w-full lg:h-[90vh] flex flex-col items-center justify-end">
-        <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-between px-4 sm:px-6 md:px-8 lg:px-12 py-12 sm:py-16 gap-8 lg:gap-0">
-          {/* Hero Left Section */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
-            variants={staggerContainer}
-            className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-8"
-          >
-            <motion.div variants={fadeInUp} className="text-white space-y-4">
-              <TypingText
-                lines={missionLines}
-                className="space-y-2 font-serif"
-              />
-            </motion.div>
-
-            <motion.div variants={fadeInUp} className="space-y-4 max-w-xl">
-              <p className="text-base sm:text-lg md:text-xl text-gray-200 font-serif leading-relaxed">
-                We are a grassroots movement led by women. No donors. No
-                gatekeepers. Just solidarity, healing, and justice. Together, we
-                are reclaiming dignity and power in the face of violence,
-                casteism, and silence
-              </p>
-            </motion.div>
-
-            <motion.div variants={fadeInUp} className="flex flex-wrap gap-6">
-              <Link
-                to="/projects"
-                className="group relative px-8 py-3 bg-accent text-white font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:text-accent"
-              >
-                <span className="relative z-10">Our Work</span>
-                <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
-              </Link>
-              <Link
-                to="/about"
-                className="group relative px-8 py-3 border-2 border-white text-white hover:text-accent font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105"
-              >
-                <span className="relative z-10">Learn More</span>
-                <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
-              </Link>
-            </motion.div>
-          </motion.div>
-
-          {/* Mission Section */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
-            custom={1}
+      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between container mx-auto px-4 py-16 text-white">
+        {/* Left Content - Headline and CTA */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}
+          variants={staggerContainer}
+          className="text-center lg:text-left lg:w-1/2 mb-10 lg:mb-0"
+          style={{ y: yText, opacity: opacityText }}
+        >
+          <motion.h1
             variants={fadeInUp}
-            className="w-full lg:w-auto max-w-md mt-8 lg:mt-0 transform hover:scale-105 transition-transform duration-300"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold font-serif mb-4 leading-tight"
           >
-            <MissionCard />
+            Lax Maxima – <br />
+            <span className="text-accent">
+              <TypingText lines={typingLines} className="inline-block" />
+            </span>
+          </motion.h1>
+          <motion.p
+            variants={fadeInUp}
+            custom={1}
+            className="text-lg sm:text-xl max-w-lg mx-auto lg:mx-0 mb-8"
+          >
+            A leading academy fostering comprehensive legal knowledge, civic
+            leadership, and community empowerment across India.
+          </motion.p>
+          <motion.div
+            variants={fadeInUp}
+            custom={2}
+            className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4"
+          >
+            <Link
+              to="/projects"
+              className="group relative px-8 py-3 bg-accent text-white font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:text-accent"
+            >
+              <span className="relative z-10">Our Work</span>
+              <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+            </Link>
+            <Link
+              to="/about"
+              className="group relative px-8 py-3 border-2 border-white text-white hover:text-accent font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105"
+            >
+              <span className="relative z-10">Learn More</span>
+              <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+            </Link>
           </motion.div>
-        </div>
+        </motion.div>
+
+        {/* Mission Section */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}
+          custom={1}
+          variants={fadeInUp}
+          className="w-full lg:w-auto max-w-md mt-8 lg:mt-0 transform hover:scale-105 transition-transform duration-300"
+        >
+          <MissionCard />
+        </motion.div>
       </div>
     </section>
   );

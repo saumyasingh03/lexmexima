@@ -23,13 +23,13 @@ const MissionCard = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.6 }}
-        className="text-sm sm:text-base leading-relaxed mb-6 sm:mb-8 text-gray-200"
+        className="text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed text-white/90"
       >
-        We exist for the women who are unseen, unheard, and unprotected. Our
-        mission is to build feminist consciousness through law, voice, healing,
-        solidarity, and skill. No permission asked. No silence accepted
+        Lax Maxima is dedicated to empowering communities through legal literacy,
+        civic engagement, and leadership development, ensuring justice and knowledge for all.
       </motion.p>
 
+      {/* Placeholder for small stats/figures related to mission */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -63,14 +63,9 @@ const MissionCard = () => {
           className="group inline-flex items-center gap-2 bg-accent text-white hover:text-primary px-6 py-3 rounded-full text-sm font-medium hover:bg-white transition-all duration-300 hover:scale-105"
         >
           Our Story
-          <motion.span
-            initial={{ x: 0 }}
-            animate={{ x: [0, 5, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-            className="inline-block"
-          >
+          <span className="transform translate-x-0 group-hover:translate-x-1 transition-transform duration-300">
             →
-          </motion.span>
+          </span>
         </Link>
       </motion.div>
     </motion.div>
