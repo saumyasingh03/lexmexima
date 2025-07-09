@@ -7,29 +7,29 @@ import CountUp from "react-countup";
 const stats = [
   {
     icon: <FaHandsHelping className="text-primary text-3xl md:text-4xl" />,
-    number: 21,
-    label: "Active States",
+    number: 1500,
+    label: "Legal Aid Beneficiaries",
   },
   {
     icon: <FaGlobe className="text-primary text-3xl md:text-4xl" />,
-    number: 53,
-    label: "Countries Research Community",
+    number: 75,
+    label: "Workshops Conducted",
   },
   {
     icon: <FaUsers className="text-primary text-3xl md:text-4xl" />,
-    number: 10000,
-    label: "Voices Raised",
+    number: 3000,
+    label: "Students Mentored",
     isMillion: true,
   },
   {
     icon: <IoWomanOutline className="text-primary text-3xl md:text-4xl" />,
-    number: 8000,
-    label: "Women Reach",
+    number: 250,
+    label: "Civic Leaders Trained",
   },
   {
     icon: <FaDove className="text-primary text-3xl md:text-4xl" />,
-    number: 50000,
-    label: "People on Social Media",
+    number: 120,
+    label: "Community Partnerships",
   },
 ];
 
@@ -47,38 +47,34 @@ const fadeInUp = {
 };
 
 const StatsSection = () => {
-  const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, amount: 0.5 });
   const [startCount, setStartCount] = useState(false);
 
   useEffect(() => {
-    if (isInView) {
+    if (inView) {
       setStartCount(true);
     }
-  }, [isInView]);
+  }, [inView]);
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative w-full py-16 sm:py-20 md:py-24 bg-white"
-    >
-      <div className="container mx-auto px-4 md:px-8 max-w-7xl">
+    <section className="bg-white py-16 sm:py-20 md:py-24" ref={ref}>
+      <div className="container mx-auto px-4">
+        {/* Headline */}
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={fadeInUp}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-primary mb-4">
-            Justice Is Not a Donation
-            <br />
-            It's a Demand
-          </h2>
-
-          <p className="text-gray-600 max-w-3xl mx-auto text-sm font-serif sm:text-base">
-            We build feminist power where it’s denied most — in silence, in
-            struggle, and in solidarity
+          <h2 className="text-lg font-medium text-accent mb-2">Our Reach</h2>
+          <h3 className="text-3xl md:text-4xl font-bold font-serif text-primary mb-4">
+            Quantifying Our Commitment to Justice
+          </h3>
+          <p className="max-w-2xl mx-auto font-serif text-gray-600">
+            Discover the measurable impact of Lax Maxima in legal education,
+            civic engagement, and community empowerment.
           </p>
         </motion.div>
 
@@ -120,6 +116,23 @@ const StatsSection = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Call to action (optional) */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={fadeInUp}
+          custom={stats.length}
+          className="mt-12 text-center"
+        >
+          <a
+            href="https://forms.gle/QVgxw657fzfKUW9WA"
+            className="inline-block bg-primary text-white font-semibold px-8 py-3 rounded-full hover:bg-primary-dark transition-colors"
+          >
+            Get Involved →
+          </a>
+        </motion.div>
       </div>
     </section>
   );

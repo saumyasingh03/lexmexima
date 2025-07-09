@@ -23,43 +23,47 @@ const fadeInUp = {
   }),
 };
 
-const TestimonialsSection = () => {
-  const testimonials = [
+const TestimonialsSection = () => { // Renamed to PrinciplesSection for clarity
+  const testimonials = [ // These are principles, not testimonials
     {
-      heading: "Feminism from Below",
-      text: "We center the voices and experiences of those historically silenced: Dalit, Muslim, Adivasi, queer, working-class, and displaced women. Theory begins there.",
+      heading: "Access for All",
+      text: "Ensuring legal knowledge, education, and justice mechanisms are accessible to every individual, regardless of background.",
       icon: Users,
     },
     {
-      text: "We do not ask for permission to speak, gather, resist, or care. We are answerable only to the communities we serve.",
-      heading: "Autonomy over Approval",
+      text: "We believe in the transformative power of legal and civic education to foster informed citizens and capable leaders.",
+      heading: "Empowerment Through Education",
       icon: ShieldCheck,
     },
     {
-      text: "We treat emotional support, healing spaces, and sisterhood not as side work but as political acts of resistance.",
-      heading: "Care as Resistance",
+      text: "Upholding the highest standards of ethical conduct, transparency, and accountability in all our programs and interactions.",
+      heading: "Integrity and Accountability",
       icon: HeartHandshake,
     },
     {
-      text: "We do not believe in gatekeeping theory. We translate feminist ideas into everyday language, practice, and lived meaning.",
-      heading: "Knowledge Must Be Shared, Not Hoarded",
+      text: "Prioritizing the needs, voices, and lived experiences of marginalized communities in shaping our legal and civic programs.",
+      heading: "Community-Centric Approach",
       icon: BookOpen,
     },
     {
-      text: "We do not help. We stand with. We do not uplift. We walk beside. This is not welfare. It is justice.",
-      heading: "Solidarity over Charity",
+      text: "Fostering collaboration and mutual support among legal professionals, community leaders, and citizens for collective impact.",
+      heading: "Collaboration for Change",
       icon: Handshake,
     },
     {
-      text: "We are a non-funded initiative. Our independence is our strength. No strings. No scripts.",
-      heading: "No Funding, No Compromise",
+      text: "Utilizing modern tools, innovative methodologies, and creative strategies to advance justice and public policy advocacy.",
+      heading: "Innovation in Advocacy",
       icon: BadgeDollarSign,
     },
   ];
 
   return (
-    <section className="relative bg-primary py-16 sm:py-20 md:py-24">
-      <div className="container mx-auto px-4 md:px-8 max-w-7xl">
+    <section className="relative w-full py-16 sm:py-20 md:py-24 bg-primary text-white overflow-hidden">
+      {/* Background gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent opacity-90"></div>
+
+      <div className="relative z-10 container mx-auto px-4">
+        {/* Headline */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -67,14 +71,13 @@ const TestimonialsSection = () => {
           variants={fadeInUp}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-white mb-4">
-            Our <br />
-            <span className="text-accent"> — Principles —</span>
-          </h2>
-          <p className="text-white/80 text-sm font-serif sm:text-base max-w-2xl mx-auto">
-            At Nari Parcham, our work is not guided by trends, funding cycles,
-            or performative allyship. It is guided by principles born from
-            struggle, care, and collective truth-telling
+          <h2 className="text-lg font-medium text-white mb-2">Our Core Values</h2>
+          <h3 className="text-3xl md:text-4xl font-bold font-serif mb-4">
+            Pillars of Justice and Empowerment
+          </h3>
+          <p className="max-w-2xl mx-auto font-serif text-white/80">
+            The foundational beliefs guiding Lax Maxima's mission to foster an
+            equitable and just society through legal and civic leadership.
           </p>
         </motion.div>
 
@@ -110,14 +113,12 @@ const Card = ({ text, heading, icon: Icon, index }) => (
     custom={index * 0.1}
     className="bg-white/10 rounded-xl p-4 hover:shadow-lg transition-all duration-300 hover:bg-white/20 backdrop-blur-sm h-full flex flex-col"
   >
-    <div className="flex flex-col items-center justify-start text-center h-full p-3">
-      <Icon className="text-accent mb-2" size={36} />
-      <p className="text-white text-xl sm:text-xl font-bold font-serif mb-2">{heading}</p>
-      <p className="text-white/90 text-sm sm:text-base leading-relaxed">
-        "{text}"
-      </p>
+    <div className="flex flex-col items-center justify-start text-center h-full p-4">
+      {Icon && <Icon className="text-accent w-12 h-12 mb-4" />} {/* Adjusted size */}
+      <h4 className="text-xl font-bold font-serif mb-2">{heading}</h4>
+      <p className="text-white/90 text-sm grow">{text}</p>
     </div>
   </motion.div>
 );
 
-export default TestimonialsSection;
+export default TestimonialsSection; // Renamed to PrinciplesSection for clarity

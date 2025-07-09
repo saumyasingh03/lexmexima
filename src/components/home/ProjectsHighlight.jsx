@@ -18,60 +18,63 @@ const fadeInUp = {
 const ProjectsHighlight = () => {
   const projects = [
     {
-      title: "Democratising Public Policy Education",
+      title: "Youth Legal Literacy Program",
       description:
-        "Making public policy accessible to students, young professionals, and grassroots communities by 2030.",
+        "Educating young minds on fundamental rights, legal processes, and the importance of civic responsibility.",
       image: "/gallery/im1.jpg",
     },
     {
-      title: "Grassroot Research: Problem-Led Inquiry",
+      title: "Rural Justice Outreach",
       description:
-        "Challenging top-down research by empowering communities to become co-creators of knowledge.",
+        "Providing accessible legal aid, counseling, and awareness campaigns in underserved rural areas.",
       image: "/gallery/im3.jpg",
     },
     {
-      title: "RTI Advocacy: Empowering Villages Through Information",
+      title: "Civic Leadership Development",
       description:
-        "Spreading awareness and demystifying the RTI Act to activate democratic participation in rural India.",
+        "Training aspiring leaders to understand local governance, advocate for community rights, and drive social change.",
       image: "/gallery/im24.jpg",
     },
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-20 md:py-24 bg-secondary">
-      <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-7xl">
+    <section className="relative w-full py-16 sm:py-20 md:py-24 bg-gray-50 overflow-hidden">
+      <div className="container mx-auto px-4">
+        {/* Headline */}
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.3 }}
           variants={fadeInUp}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-serif sm:text-4xl md:text-5xl font-bold text-white mb-4">
-            Projects
-          </h2>
-          <p className="text-sm sm:text-base font-serif md:text-lg text-white/80 max-w-3xl mx-auto">
-            Explore our impactful projects driving positive change in
-            communities worldwide.
+          <h2 className="text-lg font-medium text-accent mb-2">Our Initiatives</h2>
+          <h3 className="text-3xl md:text-4xl font-bold font-serif text-primary mb-4">
+            Pioneering Justice Through Action
+          </h3>
+          <p className="max-w-2xl mx-auto font-serif text-gray-600">
+            Highlighting our commitment to legal empowerment, civic engagement,
+            and community upliftment.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              custom={index + 1}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false, amount: 0.5 }}
               variants={fadeInUp}
-              className="relative overflow-hidden rounded-xl group h-64 sm:h-72 md:h-80"
+              custom={index}
+              className="relative rounded-lg overflow-hidden shadow-lg group transform hover:scale-[1.02] transition-transform duration-300 ease-out"
             >
-              {/* Background Image */}
+              {/* Image */}
               <img
                 src={project.image}
                 alt={project.title}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-64 object-cover brightness-75 group-hover:brightness-90 transition-all duration-300"
               />
 
               {/* Overlay */}
