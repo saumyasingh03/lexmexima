@@ -7,7 +7,7 @@ export default function GoToProjectsButton() {
   return (
     <button
       onClick={() => navigate("/projects")}
-      aria-label="Go to Projects"
+      aria-label="Go to Articles"
       style={{
         position: "fixed",
         top: 20,
@@ -33,7 +33,7 @@ export default function GoToProjectsButton() {
         e.currentTarget.style.boxShadow = "0 4px 12px rgba(5, 150, 105, 0.6)";
       }}
     >
-      ← Go to Projects
+      ← Go to Articles
     </button>
   );
 }

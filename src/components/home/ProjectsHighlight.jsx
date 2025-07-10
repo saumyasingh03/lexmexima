@@ -18,21 +18,21 @@ const fadeInUp = {
 const ProjectsHighlight = () => {
   const projects = [
     {
-      title: "Democratising Public Policy Education",
+      title: " Legal Awareness & Literacy",
       description:
-        "Making public policy accessible to students, young professionals, and grassroots communities by 2030.",
+        "Educating citizens—especially marginalized groups—about their rights, laws, and legal procedures to empower informed action and decision-making.",
       image: "/gallery/im1.jpg",
     },
     {
-      title: "Grassroot Research: Problem-Led Inquiry",
+      title: "Access to Justice",
       description:
-        "Challenging top-down research by empowering communities to become co-creators of knowledge.",
+        "Working to remove barriers (financial, linguistic, geographic, or systemic) that prevent people from seeking or receiving fair legal representation and outcomes.",
       image: "/gallery/im3.jpg",
     },
     {
-      title: "RTI Advocacy: Empowering Villages Through Information",
+      title: "Judicial Reform & Accountability",
       description:
-        "Spreading awareness and demystifying the RTI Act to activate democratic participation in rural India.",
+        "Advocating for transparent, timely, and ethical judicial processes, while addressing issues like case backlogs, corruption, and underrepresentation.",
       image: "/gallery/im24.jpg",
     },
   ];
