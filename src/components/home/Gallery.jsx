@@ -61,9 +61,8 @@ const GalleryCarousel = () => {
   });
 
   return (
-    <section className="relative py-16 sm:py-20 md:py-24 bg-gray-50 overflow-hidden">
+    <section className="relative py-16 sm:py-20 md:py-24 bg-primary-special overflow-hidden">
       <div className="container mx-auto px-4">
-        {/* Headline */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -71,17 +70,18 @@ const GalleryCarousel = () => {
           variants={fadeInUp}
           className="text-center mb-12"
         >
-          <h2 className="text-lg font-medium text-accent mb-2">Visualizing Our Mission</h2>
-          <h3 className="text-3xl md:text-4xl font-bold font-serif text-primary mb-4">
+          <h2 className="text-lg font-medium text-accent mb-2">
+            Visualizing Our Mission
+          </h2>
+          <h3 className="text-3xl md:text-4xl font-bold font-serif text-primary-light mb-4">
             Lax Maxima's Journey in Pictures
           </h3>
-          <p className="max-w-2xl mx-auto font-serif text-gray-600">
+          <p className="max-w-2xl mx-auto font-serif text-white/80">
             A vibrant collection of moments from our legal awareness workshops,
             civic leadership training, and community outreach efforts.
           </p>
         </motion.div>
 
-        {/* Carousel */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -107,19 +107,18 @@ const GalleryCarousel = () => {
                 onClick={(e) =>
                   e.stopPropagation() || instanceRef.current?.prev()
                 }
-                className="absolute top-1/2 -translate-y-1/2 left-4 z-10 w-10 h-10 p-2 bg-white rounded-full shadow-md cursor-pointer text-primary hover:bg-gray-200 transition-colors"
+                className="absolute top-1/2 -translate-y-1/2 left-4 z-10 w-10 h-10 p-2 bg-white rounded-full shadow-md cursor-pointer text-accent hover:bg-gray-200 transition-colors"
               />
               <ChevronRight
                 onClick={(e) =>
                   e.stopPropagation() || instanceRef.current?.next()
                 }
-                className="absolute top-1/2 -translate-y-1/2 right-4 z-10 w-10 h-10 p-2 bg-white rounded-full shadow-md cursor-pointer text-primary hover:bg-gray-200 transition-colors"
+                className="absolute top-1/2 -translate-y-1/2 right-4 z-10 w-10 h-10 p-2 bg-white rounded-full shadow-md cursor-pointer text-accent hover:bg-gray-200 transition-colors"
               />
             </>
           )}
         </motion.div>
 
-        {/* Grid Gallery */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -134,7 +133,7 @@ const GalleryCarousel = () => {
               className={`overflow-hidden rounded-xl ${
                 index === 0 || index === 4 ? "col-span-2" : ""
               } ${index === 3 ? "col-start-2 col-span-2" : ""}
-            ${index === 1 || index === 5 || index === 2 ? "col-span-1" : ""}`}
+          ${index === 1 || index === 5 || index === 2 ? "col-span-1" : ""}`}
             >
               <img
                 src={src}

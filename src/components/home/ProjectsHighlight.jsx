@@ -38,7 +38,7 @@ const ProjectsHighlight = () => {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-20 md:py-24 bg-gray-50 overflow-hidden">
+    <section className="relative w-full py-16 sm:py-20 md:py-24 bg-primary-special overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Headline */}
         <motion.div
@@ -48,11 +48,13 @@ const ProjectsHighlight = () => {
           variants={fadeInUp}
           className="text-center mb-12"
         >
-          <h2 className="text-lg font-medium text-accent mb-2">Our Initiatives</h2>
-          <h3 className="text-3xl md:text-4xl font-bold font-serif text-primary mb-4">
+          <h2 className="text-lg font-medium text-accent mb-2">
+            Our Initiatives
+          </h2>
+          <h3 className="text-3xl md:text-4xl font-bold font-serif text-primary-light mb-4">
             Pioneering Justice Through Action
           </h3>
-          <p className="max-w-2xl mx-auto font-serif text-gray-600">
+          <p className="max-w-2xl mx-auto font-serif text-white/80">
             Highlighting our commitment to legal empowerment, civic engagement,
             and community upliftment.
           </p>
