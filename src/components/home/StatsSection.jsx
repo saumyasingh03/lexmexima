@@ -7,29 +7,29 @@ import CountUp from "react-countup";
 const stats = [
   {
     icon: <FaHandsHelping className="text-primary text-3xl md:text-4xl" />,
-    number: 1500,
-    label: "Legal Aid Beneficiaries",
+    number: 1,
+    label: "Supreme Court",
   },
   {
     icon: <FaGlobe className="text-primary text-3xl md:text-4xl" />,
-    number: 75,
-    label: "Workshops Conducted",
+    number: 43,
+    label: "High Courts",
   },
   {
     icon: <FaUsers className="text-primary text-3xl md:text-4xl" />,
-    number: 3000,
-    label: "Students Mentored",
+    number: 688,
+    label: "District Courts",
     isMillion: true,
   },
   {
     icon: <IoWomanOutline className="text-primary text-3xl md:text-4xl" />,
-    number: 250,
-    label: "Civic Leaders Trained",
+    number: 52 ,
+    label: "Million pending cases",
   },
   {
     icon: <FaDove className="text-primary text-3xl md:text-4xl" />,
-    number: 120,
-    label: "Community Partnerships",
+    number: 40,
+    label: "Million Case Every Year",
   },
 ];
 
