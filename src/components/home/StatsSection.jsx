@@ -1,33 +1,38 @@
 import React, { useRef, useState, useEffect } from "react";
-import { FaHandsHelping, FaUsers, FaDove, FaGlobe } from "react-icons/fa";
-import { IoWomanOutline } from "react-icons/io5";
+import {
+  FaBalanceScale,
+  FaChalkboardTeacher,
+  FaUserGraduate,
+  FaUsersCog,
+  FaHandshake,
+} from "react-icons/fa";
 import { motion, useInView } from "framer-motion";
 import CountUp from "react-countup";
 
 const stats = [
   {
-    icon: <FaHandsHelping className="text-primary text-3xl md:text-4xl" />,
+    icon: <FaBalanceScale className="text-primary text-3xl md:text-4xl" />,
     number: 1500,
     label: "Legal Aid Beneficiaries",
   },
   {
-    icon: <FaGlobe className="text-primary text-3xl md:text-4xl" />,
+    icon: <FaChalkboardTeacher className="text-primary text-3xl md:text-4xl" />,
     number: 75,
     label: "Workshops Conducted",
   },
   {
-    icon: <FaUsers className="text-primary text-3xl md:text-4xl" />,
+    icon: <FaUserGraduate className="text-primary text-3xl md:text-4xl" />,
     number: 3000,
     label: "Students Mentored",
     isMillion: true,
   },
   {
-    icon: <IoWomanOutline className="text-primary text-3xl md:text-4xl" />,
+    icon: <FaUsersCog className="text-primary text-3xl md:text-4xl" />,
     number: 250,
     label: "Civic Leaders Trained",
   },
   {
-    icon: <FaDove className="text-primary text-3xl md:text-4xl" />,
+    icon: <FaHandshake className="text-primary text-3xl md:text-4xl" />,
     number: 120,
     label: "Community Partnerships",
   },
@@ -117,7 +122,7 @@ const StatsSection = () => {
           ))}
         </div>
 
-        {/* Call to action (optional) */}
+        {/* Call to action */}
         <motion.div
           initial="hidden"
           whileInView="visible"
