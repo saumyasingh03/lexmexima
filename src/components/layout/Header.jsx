@@ -19,7 +19,7 @@ const Header = ({ toggleMobileMenu, mobileMenuOpen, isActive }) => {
             className="flex items-center gap-2 text-xl sm:text-2xl font-bold font-serif text-white"
           >
             <img
-              src="/images/logo.png"
+              src="https://tse4.mm.bing.net/th/id/OIP.50JGYjw2O0SkOHVMn6SGxwHaF0?pid=Api&P=0&h=180"
               alt="Logo"
               className="h-10 w-10 object-contain"
             />
