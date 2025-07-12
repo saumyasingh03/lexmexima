@@ -18,21 +18,23 @@ const fadeInUp = {
 const ProjectsHighlight = () => {
   const projects = [
     {
-      title: "Youth Legal Literacy Program",
+
+      title: " Legal Awareness & Literacy",
       description:
-        "Educating young minds on fundamental rights, legal processes, and the importance of civic responsibility.",
+        "Educating citizens—especially marginalized groups—about their rights, laws, and legal procedures to empower informed action and decision-making.",
       image: "/gallery/im1.jpg",
     },
     {
-      title: "Rural Justice Outreach",
+      title: "Access to Justice",
       description:
-        "Providing accessible legal aid, counseling, and awareness campaigns in underserved rural areas.",
+        "Working to remove barriers (financial, linguistic, geographic, or systemic) that prevent people from seeking or receiving fair legal representation and outcomes.",
       image: "/gallery/im3.jpg",
     },
     {
-      title: "Civic Leadership Development",
+      title: "Judicial Reform & Accountability",
       description:
-        "Training aspiring leaders to understand local governance, advocate for community rights, and drive social change.",
+        "Advocating for transparent, timely, and ethical judicial processes, while addressing issues like case backlogs, corruption, and underrepresentation.",
+
       image: "/gallery/im24.jpg",
     },
   ];

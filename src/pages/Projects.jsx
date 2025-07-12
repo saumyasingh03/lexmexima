@@ -14,58 +14,58 @@ const categories = [
 const projectData = [
   {
     id: 1,
-    title: "Democratising Public Policy Education",
-    category: "Education",
+    title: "Legal Awareness & Literacy",
+    category: "Articles",
     color: "#a3b18a",
     description:
-      "Making public policy accessible to students, young professionals, and grassroots communities by 2030.",
+      "Educating citizens—especially marginalized groups—about their rights, laws, and legal procedures to empower informed action and decision-making.",
     image:
-      "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=800&q=80",
+      "https://cdn-res.keymedia.com/cms/images/ca/120/0394_638738979179423742.png",
     location: "India",
   },
   {
     id: 2,
-    title: "Grassroot Research: Problem-Led Inquiry",
+    title: "Access to Justice",
     category: "Innovation",
     color: "#3d4d2b",
     description:
-      "Challenging top-down research by empowering communities to become co-creators of knowledge.",
+      "Working to remove barriers (financial, linguistic, geographic, or systemic) that prevent people from seeking or receiving fair legal representation and outcomes.",
     image:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+      "https://media.licdn.com/dms/image/v2/C4E12AQFIjHQPOvmf2w/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1588278176711?e=2147483647&v=beta&t=7guuX1EPHCbB1fQzS4tAdsLrQsNwL28KWm_NmF8cD0E",
     location: "India",
   },
   {
     id: 3,
-    title: "RTI Advocacy: Empowering Villages Through Information",
+    title: "Judicial Reform & Accountability",
     category: "Education",
     color: "#a3b18a",
     description:
-      "Spreading awareness and demystifying the RTI Act to activate democratic participation in rural India.",
+      "Advocating for transparent, timely, and ethical judicial processes, while addressing issues like case backlogs, corruption, and underrepresentation.",
     image:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+      "https://www.lloydlawcollege.edu.in/images/LAW/blog/judicial-reforms-in-india.webp",
     location: "India",
   },
   {
     id: 4,
-    title: "Kaam Ka Haq: Labor Rights for Every Worker",
+    title: "Legal Aid & Pro Bono Services",
     category: "Innovation",
     color: "#3d4d2b",
     description:
-      "Educating and empowering informal sector workers on legal labor rights and workplace dignity.",
+      "Providing free or low-cost legal assistance to vulnerable populations through volunteer lawyers, law students, and paralegal networks.",
     image:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7p00OCX5bvUTxw0JmUep5D9Nl05tuNWvJRA&s",
     location: "India",
   },
   {
     id: 5,
-    title: "Nari Parcham: Grassroots Women’s Leadership Initiative",
+    title: "Digital Justice & Legal Tech",
     category: "Education",
     color: "#a3b18a",
     description:
-      "Identifying and nurturing local women leaders to influence decision-making from the ground up.",
+      "Leveraging technology to improve legal access—such as online grievance redressal systems, e-courts, digital case tracking, and mobile legal help apps.",
     image:
-      "https://images.unsplash.com/photo-1526925539332-aa3b66e35444?auto=format&fit=crop&w=800&q=80",
-    location: "India",
+        "https://png.pngtree.com/thumb_back/fw800/background/20250512/pngtree-digital-justice-and-law-enforcement-image_17275251.jpg",
+      location: "India",
   },
 ];
 
@@ -134,13 +134,10 @@ const Projects = () => {
             transition={{ delay: 0.3, duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg font-serif">
-              Projects
+              Articles
             </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-xl drop-shadow font-light">
-              Explore our diverse range of impactful projects, from education
-              and agriculture to water, energy, and innovation. Each initiative
-              is designed to foster sustainable development and empower
-              communities.
+              Explore our diverse range of impactful judicial initiatives, encompassing legal awareness, access to justice, judicial reforms, and digital legal services. Each program is crafted to strengthen the rule of law, uphold justice, and empower citizens through a fair and transparent legal system.
             </p>
           </motion.div>
           <motion.div
@@ -153,12 +150,10 @@ const Projects = () => {
               What We Do
             </h2>
             <p className="text-white/90 text-sm mb-2">
-              We train, we listen, we mobilize. But most importantly, we build
-              collective feminist consciousness in places where it has long been
-              denied. Nari Parcham operates as a zero-funding project. No
-              institutional dependencies. No CSR strings. Just women standing
-              beside women, building knowledge that is relevant, bold, and
-              life-affirming.
+            We educate, we advocate, we empower. But most importantly, we work to make justice accessible to all.
+             Our judicial initiatives function independently—free from institutional funding or corporate influence. 
+             It’s about citizens standing together, strengthening legal literacy, promoting accountability, 
+            and building a justice system that is fair, transparent, and people-centered.
             </p>
             <a
               href="#learn-more"
