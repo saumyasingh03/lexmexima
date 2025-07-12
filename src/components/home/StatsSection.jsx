@@ -11,30 +11,34 @@ import CountUp from "react-countup";
 
 const stats = [
   {
+
+   
+  
     icon: <FaBalanceScale className="text-primary text-3xl md:text-4xl" />,
-    number: 1500,
-    label: "Legal Aid Beneficiaries",
+    number: 1,
+    label: "Supreme Court",
   },
   {
-    icon: <FaChalkboardTeacher className="text-primary text-3xl md:text-4xl" />,
-    number: 75,
-    label: "Workshops Conducted",
+     icon: <FaChalkboardTeacher className="text-primary text-3xl md:text-4xl" />,
+    number: 43,
+    label: "High Courts",
   },
   {
-    icon: <FaUserGraduate className="text-primary text-3xl md:text-4xl" />,
-    number: 3000,
-    label: "Students Mentored",
+icon: <FaUserGraduate className="text-primary text-3xl md:text-4xl" />,
+    number: 688,
+    label: "District Courts",
     isMillion: true,
   },
   {
-    icon: <FaUsersCog className="text-primary text-3xl md:text-4xl" />,
-    number: 250,
-    label: "Civic Leaders Trained",
+     icon: <FaUsersCog className="text-primary text-3xl md:text-4xl" />,
+    number: 52 ,
+    label: "Million pending cases",
   },
   {
     icon: <FaHandshake className="text-primary text-3xl md:text-4xl" />,
-    number: 120,
-    label: "Community Partnerships",
+    number: 40,
+    label: "Million Case Every Year",
+
   },
 ];
 
@@ -63,7 +67,7 @@ const StatsSection = () => {
   }, [inView]);
 
   return (
-    <section className="bg-white py-16 sm:py-20 md:py-24" ref={ref}>
+    <section className="bg-primary-special py-16 sm:py-20 md:py-24" ref={ref}>
       <div className="container mx-auto px-4">
         {/* Headline */}
         <motion.div
@@ -74,10 +78,10 @@ const StatsSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-lg font-medium text-accent mb-2">Our Reach</h2>
-          <h3 className="text-3xl md:text-4xl font-bold font-serif text-primary mb-4">
+          <h3 className="text-3xl md:text-4xl font-bold font-serif text-primary-light mb-4">
             Quantifying Our Commitment to Justice
           </h3>
-          <p className="max-w-2xl mx-auto font-serif text-gray-600">
+          <p className="max-w-2xl mx-auto font-serif text-white/80">
             Discover the measurable impact of Lax Maxima in legal education,
             civic engagement, and community empowerment.
           </p>
@@ -93,7 +97,7 @@ const StatsSection = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
               custom={i}
-              className="flex flex-col items-center p-4 sm:p-6 rounded-lg bg-accent/20"
+              className="flex flex-col items-center p-4 sm:p-6 rounded-lg bg-white/10 backdrop-blur-md border border-white/10 shadow-md hover:shadow-xl transition-all"
             >
               <motion.div
                 animate={{ scale: [1, 1.2, 1] }}
@@ -102,7 +106,7 @@ const StatsSection = () => {
               >
                 {stat.icon}
               </motion.div>
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-accent">
                 {startCount ? (
                   <CountUp
                     start={0}
@@ -115,7 +119,7 @@ const StatsSection = () => {
                   `0+`
                 )}
               </div>
-              <div className="text-sm sm:text-base text-gray-600 font-medium mt-2 text-center">
+              <div className="text-sm sm:text-base text-white/80 font-medium mt-2 text-center">
                 {stat.label}
               </div>
             </motion.div>
@@ -133,7 +137,7 @@ const StatsSection = () => {
         >
           <a
             href="https://forms.gle/QVgxw657fzfKUW9WA"
-            className="inline-block bg-primary text-white font-semibold px-8 py-3 rounded-full hover:bg-primary-dark transition-colors"
+            className="inline-block bg-accent text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-primary transition-colors"
           >
             Get Involved →
           </a>

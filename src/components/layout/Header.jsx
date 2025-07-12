@@ -11,7 +11,7 @@ const navLinks = [
 
 const Header = ({ toggleMobileMenu, mobileMenuOpen, isActive }) => {
   return (
-    <header className="bg-[#2B0D37] shadow-sm sticky top-0 z-50">
+    <header className="bg-primary shadow-sm sticky top-0 z-50">
       <nav className="container mx-auto px-4 py-3 sm:py-4">
         <div className="flex justify-between items-center">
           <Link
@@ -23,7 +23,7 @@ const Header = ({ toggleMobileMenu, mobileMenuOpen, isActive }) => {
               alt="Logo"
               className="h-10 w-10 object-contain"
             />
-            <span>Nari Parcham</span>
+            <span>Lax Maxima</span>
           </Link>
 
           {/* Desktop Navigation */}
