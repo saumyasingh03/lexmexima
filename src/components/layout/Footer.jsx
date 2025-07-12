@@ -57,7 +57,7 @@ const Footer = () => {
               Saharanpur, UP
             </p>
             <p className="text-gray-300 text-sm sm:text-base">
-              Nariparcham@gmail.com
+               parchamnari@gmail.com
             </p>
             <p className="text-gray-300 text-sm sm:text-base">
               Dr Qudsiya Anjum- 9837378699 <br />
