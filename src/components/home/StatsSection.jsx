@@ -7,29 +7,29 @@ import CountUp from "react-countup";
 const stats = [
   {
     icon: <FaHandsHelping className="text-primary text-3xl md:text-4xl" />,
-    number: 21,
-    label: "Active States",
+    number: 1,
+    label: "Supreme Court",
   },
   {
     icon: <FaGlobe className="text-primary text-3xl md:text-4xl" />,
-    number: 53,
-    label: "Countries Research Community",
+    number: 43,
+    label: "High Courts",
   },
   {
     icon: <FaUsers className="text-primary text-3xl md:text-4xl" />,
-    number: 10000,
-    label: "Voices Raised",
+    number: 688,
+    label: "District Courts",
     isMillion: true,
   },
   {
     icon: <IoWomanOutline className="text-primary text-3xl md:text-4xl" />,
-    number: 8000,
-    label: "Women Reach",
+    number: 52 ,
+    label: "Million pending cases",
   },
   {
     icon: <FaDove className="text-primary text-3xl md:text-4xl" />,
-    number: 50000,
-    label: "People on Social Media",
+    number: 40,
+    label: "Million Case Every Year",
   },
 ];
 
@@ -47,38 +47,34 @@ const fadeInUp = {
 };
 
 const StatsSection = () => {
-  const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, amount: 0.5 });
   const [startCount, setStartCount] = useState(false);
 
   useEffect(() => {
-    if (isInView) {
+    if (inView) {
       setStartCount(true);
     }
-  }, [isInView]);
+  }, [inView]);
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative w-full py-16 sm:py-20 md:py-24 bg-white"
-    >
-      <div className="container mx-auto px-4 md:px-8 max-w-7xl">
+    <section className="bg-primary-special py-16 sm:py-20 md:py-24" ref={ref}>
+      <div className="container mx-auto px-4">
+        {/* Headline */}
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={fadeInUp}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-primary mb-4">
-            Justice Is Not a Donation
-            <br />
-            It's a Demand
-          </h2>
-
-          <p className="text-gray-600 max-w-3xl mx-auto text-sm font-serif sm:text-base">
-            We build feminist power where it’s denied most — in silence, in
-            struggle, and in solidarity
+          <h2 className="text-lg font-medium text-accent mb-2">Our Reach</h2>
+          <h3 className="text-3xl md:text-4xl font-bold font-serif text-primary-light mb-4">
+            Quantifying Our Commitment to Justice
+          </h3>
+          <p className="max-w-2xl mx-auto font-serif text-white/80">
+            Discover the measurable impact of Lax Maxima in legal education,
+            civic engagement, and community empowerment.
           </p>
         </motion.div>
 
@@ -92,7 +88,7 @@ const StatsSection = () => {
               viewport={{ once: true }}
               variants={fadeInUp}
               custom={i}
-              className="flex flex-col items-center p-4 sm:p-6 rounded-lg bg-accent/20"
+              className="flex flex-col items-center p-4 sm:p-6 rounded-lg bg-white/10 backdrop-blur-md border border-white/10 shadow-md hover:shadow-xl transition-all"
             >
               <motion.div
                 animate={{ scale: [1, 1.2, 1] }}
@@ -101,7 +97,7 @@ const StatsSection = () => {
               >
                 {stat.icon}
               </motion.div>
-              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-accent">
                 {startCount ? (
                   <CountUp
                     start={0}
@@ -114,12 +110,29 @@ const StatsSection = () => {
                   `0+`
                 )}
               </div>
-              <div className="text-sm sm:text-base text-gray-600 font-medium mt-2 text-center">
+              <div className="text-sm sm:text-base text-white/80 font-medium mt-2 text-center">
                 {stat.label}
               </div>
             </motion.div>
           ))}
         </div>
+
+        {/* Call to action */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={fadeInUp}
+          custom={stats.length}
+          className="mt-12 text-center"
+        >
+          <a
+            href="https://forms.gle/QVgxw657fzfKUW9WA"
+            className="inline-block bg-accent text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-primary transition-colors"
+          >
+            Get Involved →
+          </a>
+        </motion.div>
       </div>
     </section>
   );

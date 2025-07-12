@@ -18,6 +18,7 @@ const fadeInUp = {
 const ProjectsHighlight = () => {
   const projects = [
     {
+
       title: " Legal Awareness & Literacy",
       description:
         "Educating citizens—especially marginalized groups—about their rights, laws, and legal procedures to empower informed action and decision-making.",
@@ -33,45 +34,51 @@ const ProjectsHighlight = () => {
       title: "Judicial Reform & Accountability",
       description:
         "Advocating for transparent, timely, and ethical judicial processes, while addressing issues like case backlogs, corruption, and underrepresentation.",
+
       image: "/gallery/im24.jpg",
     },
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-20 md:py-24 bg-secondary">
-      <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-7xl">
+    <section className="relative w-full py-16 sm:py-20 md:py-24 bg-primary-special overflow-hidden">
+      <div className="container mx-auto px-4">
+        {/* Headline */}
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.3 }}
           variants={fadeInUp}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-serif sm:text-4xl md:text-5xl font-bold text-white mb-4">
-            Projects
+          <h2 className="text-lg font-medium text-accent mb-2">
+            Our Initiatives
           </h2>
-          <p className="text-sm sm:text-base font-serif md:text-lg text-white/80 max-w-3xl mx-auto">
-            Explore our impactful projects driving positive change in
-            communities worldwide.
+          <h3 className="text-3xl md:text-4xl font-bold font-serif text-primary-light mb-4">
+            Pioneering Justice Through Action
+          </h3>
+          <p className="max-w-2xl mx-auto font-serif text-white/80">
+            Highlighting our commitment to legal empowerment, civic engagement,
+            and community upliftment.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              custom={index + 1}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false, amount: 0.5 }}
               variants={fadeInUp}
-              className="relative overflow-hidden rounded-xl group h-64 sm:h-72 md:h-80"
+              custom={index}
+              className="relative rounded-lg overflow-hidden shadow-lg group transform hover:scale-[1.02] transition-transform duration-300 ease-out"
             >
-              {/* Background Image */}
+              {/* Image */}
               <img
                 src={project.image}
                 alt={project.title}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-64 object-cover brightness-75 group-hover:brightness-90 transition-all duration-300"
               />
 
               {/* Overlay */}

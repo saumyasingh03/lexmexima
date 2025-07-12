@@ -55,7 +55,7 @@ const ContactForm = () => {
         
         <button 
           type="submit" 
-          className="px-6 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary-dark transition-colors"
+          className="px-6 py-3 bg-[#00BFFF] text-white font-medium rounded-md hover:bg-[#009ACD] transition-colors"
         >
           Send Message
         </button>
