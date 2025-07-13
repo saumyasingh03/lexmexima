@@ -14,7 +14,7 @@ import ProjectPage5 from "../pages/projects/ProjectPage5";
 // import Testimonials from '../pages/Testimonials';
 import NotFound from "../pages/NotFound";
 
-const router = createBrowserRouter([
+const routes = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
@@ -35,4 +35,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;
+export default routes;

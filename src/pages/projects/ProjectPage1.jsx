@@ -7,7 +7,7 @@ const SDGItem = ({ number, title }) => (
     role="button"
     aria-label={`Sustainable Development Goal ${number}: ${title}`}
     style={{
-      backgroundColor: "#22c55e",
+      backgroundColor: "#2B0D37",
       color: "white",
       padding: "6px 18px",
       borderRadius: "9999px",
@@ -22,7 +22,7 @@ const SDGItem = ({ number, title }) => (
       transition: "background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease",
     }}
     onMouseEnter={(e) => {
-      e.currentTarget.style.backgroundColor = "#16a34a";
+      e.currentTarget.style.backgroundColor = "#2B0D37";
       e.currentTarget.style.transform = "scale(1.07)";
       e.currentTarget.style.boxShadow = "0 5px 15px rgba(22, 163, 74, 0.7)";
     }}
@@ -49,7 +49,7 @@ const PhaseItem = ({ children }) => (
     style={{
       marginBottom: "14px",
       lineHeight: 1.7,
-      color: "#374151",
+      color: "#2B0D37",
       fontSize: "1.05rem",
       position: "relative",
       paddingLeft: "22px",
@@ -83,8 +83,7 @@ const PhaseSection = ({ title, yearRange, points }) => {
   return (
     <section
       style={{
-        background:
-          "linear-gradient(135deg, #e6f4ea 0%, #d1eadd 100%)",
+        background: "linear-gradient(135deg, #e6f4ea 0%, #d1eadd 100%)",
         borderRadius: "16px",
         padding: "32px 36px",
         boxShadow: "0 10px 24px rgba(34, 197, 94, 0.15)",
@@ -118,7 +117,7 @@ const PhaseSection = ({ title, yearRange, points }) => {
             marginLeft: "auto",
             fontWeight: "500",
             fontSize: "1.05rem",
-            color: "#047857",
+            color: "#2B0D37",
             fontStyle: "italic",
           }}
         >
@@ -135,41 +134,41 @@ const PhaseSection = ({ title, yearRange, points }) => {
 };
 
 export default function ProjectPage1() {
-  const projectTitle = "Democratising Public Policy Education";
+  const projectTitle = "Legal Awareness & Literacy";
   const vision =
-    "To make public policy education easy to understand and available to everyone, especially students, young professionals, and grassroots communities, by 2030.";
+    "To empower marginalized communities with knowledge of their legal rights and duties, ensuring access to justice and promoting responsible citizenship through sustained awareness programs by 2030.";
 
   const sdgs = [
     { number: 4, title: "Quality Education" },
+    { number: 5, title: "Gender Equality" },
     { number: 10, title: "Reduced Inequalities" },
     { number: 16, title: "Peace, Justice, and Strong Institutions" },
-    { number: 17, title: "Partnerships for the Goals" },
   ];
 
   const phase1Points = [
-    "Reach 10,000+ learners via open-access content: videos, infographics, webinars",
-    "Launch 3 certificate courses (2 in English, 1 in a regional language)",
-    "Build an active online learning community of 1,000+ members",
-    "Translate key content into 3 Indian languages",
-    'Run "Policy for All" Literacy Campaigns in 5 rural or semi-urban districts',
-    "Partner with 25+ colleges and local NGOs for offline sessions and outreach",
-    "Train 1,500+ students and professionals in short-term programs",
+    "Conduct 100+ legal literacy workshops in rural and urban slum communities",
+    "Create multilingual infographics and short videos on key legal rights",
+    "Train 500 community paralegals and youth volunteers as legal awareness ambassadors",
+    "Distribute simplified handbooks on rights related to women, children, and labor",
+    "Partner with 50+ schools/colleges for 'Know Your Rights' campaigns",
+    "Organize 15 legal aid camps with pro-bono lawyers in underserved areas",
+    "Launch a helpline for legal queries and support in 3 regional languages",
   ];
 
   const phase2Points = [
-    "Develop a mobile-first platform for low-bandwidth, rural learners",
-    "Translate content into 5 more languages, expanding regional access",
-    "Establish Policy Clubs in 100+ schools and colleges",
-    "Publish 1 open-source guidebook on public policy and Indian laws",
-    "Launch a Public Policy Fellowship for 100 underrepresented youth",
-    "Create interactive tools and simulations for learning policy (youth-focused)",
-    "Reach 1 lakh (100,000) learners cumulatively by 2028",
-    "Build a National Coalition for policy education and organize India’s 1st People's Policy Hackathon",
-    "Support community-led policy research in 20+ districts",
-    "Reach a total of 500,000 learners by 2030",
-    "Expand globally by partnering with 3 Global South countries",
-    "Publish a People’s Public Policy Charter co-created with citizens",
-    "Make all content freely available under a Creative Commons license",
+    "Establish 100 Legal Literacy Clubs across India for youth engagement",
+    "Create an open-access e-learning platform on basic legal knowledge",
+    "Collaborate with law universities to conduct mobile legal clinics",
+    "Expand content into 8+ regional languages to improve accessibility",
+    "Support legal empowerment of women in 50+ villages through workshops",
+    "Host annual Legal Awareness Week in collaboration with bar associations",
+    "Develop gamified tools and mobile quizzes for legal literacy",
+    "Reach 1 million people with legal information by 2028",
+    "Launch 'Right to Justice' awareness buses in remote areas",
+    "Document success stories and create a People's Legal Rights Archive",
+    "Build an open data dashboard tracking legal literacy progress",
+    "Publish an annual Legal Literacy Impact Report and share policy recommendations",
+    "Ensure all educational material is available under a Creative Commons license",
   ];
 
   return (
@@ -177,7 +176,7 @@ export default function ProjectPage1() {
       <GoToProjectsButton />
       <main
         style={{
-          width: "100%",  // changed from 100vw to 100% to avoid horizontal overflow
+          width: "100%",
           minHeight: "100vh",
           padding: "3.5rem 5vw 5rem",
           fontFamily:
@@ -188,11 +187,10 @@ export default function ProjectPage1() {
           flexDirection: "column",
           alignItems: "center",
           userSelect: "text",
-          overflowX: "hidden", // extra safeguard to prevent horizontal scroll
+          overflowX: "hidden",
           boxSizing: "border-box",
         }}
       >
-        {/* Header Section */}
         <section
           style={{
             maxWidth: "960px",
@@ -233,7 +231,6 @@ export default function ProjectPage1() {
           </p>
         </section>
 
-        {/* SDG Alignment Section */}
         <section
           style={{
             maxWidth: "960px",
@@ -279,7 +276,6 @@ export default function ProjectPage1() {
           </div>
         </section>
 
-        {/* Phases Section */}
         <section
           style={{
             maxWidth: "960px",
@@ -297,7 +293,6 @@ export default function ProjectPage1() {
           <PhaseSection title="Phase 2" yearRange="2026-2030" points={phase2Points} />
         </section>
 
-        {/* Footer note or blank space */}
         <footer
           style={{
             marginTop: "auto",
@@ -310,7 +305,7 @@ export default function ProjectPage1() {
             width: "100%",
           }}
         >
-          © 2024 Policy Project Initiative. All rights reserved.
+          © 2025 Nari Parcham Initiative. All rights reserved.
         </footer>
       </main>
 

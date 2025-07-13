@@ -13,11 +13,10 @@ const Section = ({ title, children, delay = 0 }) => {
       style={{
         maxWidth: "960px",
         width: "100%",
-        background:
-          "linear-gradient(135deg, #fff7fa 0%, #f3e8ef 100%)",
+        background: "linear-gradient(135deg, #f0f8ff 0%, #e1f1ff 100%)",
         borderRadius: "16px",
         padding: "32px 36px",
-        boxShadow: "0 10px 24px rgba(171, 53, 120, 0.15)",
+        boxShadow: "0 10px 24px rgba(36, 99, 184, 0.15)",
         marginBottom: "42px",
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(24px)",
@@ -31,7 +30,7 @@ const Section = ({ title, children, delay = 0 }) => {
         style={{
           fontSize: "1.8rem",
           fontWeight: "700",
-          color: "#922b58",
+          color: "#1c3e70",
           marginBottom: "24px",
           userSelect: "none",
           display: "flex",
@@ -40,11 +39,11 @@ const Section = ({ title, children, delay = 0 }) => {
         }}
       >
         <span role="img" aria-hidden="true" style={{ fontSize: "1.9rem" }}>
-          🌾
+          💻
         </span>
         {title}
       </h2>
-      <div style={{ fontSize: "1.1rem", lineHeight: 1.7, color: "#2d2d2d" }}>
+      <div style={{ fontSize: "1.1rem", lineHeight: 1.7, color: "#1e293b" }}>
         {children}
       </div>
     </section>
@@ -62,8 +61,7 @@ export default function ProjectPage5() {
           padding: "3.5rem 5vw 5rem",
           fontFamily:
             "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-          background:
-            "linear-gradient(180deg, #fff7fa 0%, #ffffff 85%)",
+          background: "linear-gradient(180deg, #f0f8ff 0%, #ffffff 85%)",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -79,7 +77,7 @@ export default function ProjectPage5() {
             backgroundColor: "white",
             borderRadius: "24px",
             padding: "3.5rem 3rem 3rem",
-            boxShadow: "0 20px 70px rgba(171, 53, 120, 0.15)",
+            boxShadow: "0 20px 70px rgba(36, 99, 184, 0.15)",
             marginBottom: "4.5rem",
             textAlign: "center",
             opacity: 0,
@@ -94,59 +92,66 @@ export default function ProjectPage5() {
               fontWeight: "900",
               lineHeight: 1.1,
               marginBottom: "1rem",
-              color: "#922b58",
+              color: "#1c3e70",
               userSelect: "text",
             }}
           >
-            Nari Parcham: Grassroots Women’s Leadership Initiative
+            NyayaTech: Digital Justice & Legal Tech Innovation
           </h1>
           <p
             style={{
               fontSize: "1.4rem",
               fontWeight: "600",
-              color: "#e91e63",
+              color: "#2563eb",
               marginBottom: "1.25rem",
               fontStyle: "italic",
             }}
           >
-            From Margin to Mandate
+            Accessible. Transparent. Tech-Enabled Justice.
           </p>
         </section>
 
         {/* Description */}
         <Section title="Project Description" delay={350}>
           <p>
-            Nari Parcham is a bold grassroots initiative to identify, train, and empower local women leaders who can influence decision-making, challenge gender inequality, and shape the future of their communities. Rooted in the belief that every woman carries leadership potential, this program nurtures leadership not from the top down, but from the soil up.
+            <strong>NyayaTech</strong> is a legal technology and digital justice initiative aimed at modernizing how legal services are accessed, delivered, and understood in India. With millions facing barriers to justice due to distance, complexity, or digital illiteracy, this project builds inclusive legal tech tools that bring transparency and efficiency to the justice system.
           </p>
           <p>
-            Across rural India, women lead silently every day—managing homes, caregiving, running small businesses, organizing self-help groups. Yet they remain excluded from public leadership spaces, often unheard in panchayat meetings, local committees, or policy forums. Nari Parcham exists to change that—by turning everyday resilience into recognized leadership.
+            The project bridges the digital divide in legal services through open-source platforms, mobile-friendly solutions, and vernacular tools designed for rural, semi-urban, and marginalized populations.
           </p>
 
-          <h3 style={{ marginTop: "24px", color: "#922b58" }}>How It Works:</h3>
+          <h3 style={{ marginTop: "24px", color: "#1c3e70" }}>Core Components:</h3>
 
-          <ul style={{ paddingLeft: "1.3rem", color: "#2d2d2d", marginBottom: "24px", listStyle: "none" }}>
+          <ul
+            style={{
+              paddingLeft: "1.3rem",
+              color: "#1e293b",
+              marginBottom: "24px",
+              listStyle: "none",
+            }}
+          >
             <li>
-              <strong style={{ color: "#c2185b" }}>🟣 Leadership Labs:</strong> Women join hands-on, village-level learning sessions focused on public speaking, negotiation, rights awareness, and leadership practice. These are designed as safe, inclusive spaces where women gain not just knowledge, but voice.
+              <strong style={{ color: "#2563eb" }}>💡 Legal Chatbots:</strong> AI-powered chatbots provide real-time legal information on topics like land rights, domestic violence, labor laws, and cybercrime—across local languages.
             </li>
             <li style={{ marginTop: "1rem" }}>
-              <strong style={{ color: "#c2185b" }}>🟣 Civic & Policy Education:</strong> Participants learn how local governance works—how to access schemes like MGNREGA, how to file RTIs, how budgets flow—and how to intervene when rights are denied.
+              <strong style={{ color: "#2563eb" }}>📱 Mobile RTI & FIR Tools:</strong> Citizens can draft and track RTI applications or register basic FIRs through intuitive mobile interfaces without lawyer dependency.
             </li>
             <li style={{ marginTop: "1rem" }}>
-              <strong style={{ color: "#c2185b" }}>🟣 Action Projects:</strong> Each woman identifies a local issue—be it water scarcity, school dropout, or domestic violence—and leads a small community project to address it, backed by mentorship and peer support.
+              <strong style={{ color: "#2563eb" }}>🗂️ E-Kanoon Libraries:</strong> Interactive digital law libraries explain acts, schemes, and rights using infographics, voice notes, and animations tailored for semi-literate users.
             </li>
             <li style={{ marginTop: "1rem" }}>
-              <strong style={{ color: "#c2185b" }}>🟣 Sisterhood Circles:</strong> The program creates long-term support networks where women can grow together, share strategies, and respond to challenges as a collective force.
+              <strong style={{ color: "#2563eb" }}>🧑‍⚖️ Virtual Nyaya Kendras:</strong> Local digital booths with trained facilitators where users can attend online court hearings, e-meet legal experts, or file online petitions.
             </li>
             <li style={{ marginTop: "1rem" }}>
-              <strong style={{ color: "#c2185b" }}>🟣 Public Visibility:</strong> Stories of success, courage, and change are shared through community events and local media—because when one woman rises, many follow.
+              <strong style={{ color: "#2563eb" }}>🔐 Data for Justice:</strong> A civic tech dashboard that uses anonymized case data to identify bottlenecks in local courts and advocate for systemic reform.
             </li>
           </ul>
 
           <p>
-            Nari Parcham is not about building individual champions. It is about reclaiming space, voice, and power—and creating a ripple effect where more women take their place at the table, in the Gram Sabha, in public institutions, and in the collective imagination of what leadership looks like.
+            By combining justice and technology, NyayaTech doesn't replace human legal help—it strengthens it. It complements grassroots paralegals and lawyers with tools that are fast, accountable, and scalable.
           </p>
           <p>
-            Because when Nari holds the Parcham, change is not just possible—it’s unstoppable.
+            Whether it's a farm worker accessing wage complaint forms through voice navigation or a domestic violence survivor filing an e-affidavit discreetly—NyayaTech believes digital dignity is legal dignity.
           </p>
         </Section>
 
@@ -156,7 +161,7 @@ export default function ProjectPage5() {
             marginTop: "auto",
             paddingTop: "4rem",
             fontSize: "0.9rem",
-            color: "#c88aa1",
+            color: "#94a3b8",
             userSelect: "none",
             textAlign: "center",
             maxWidth: "960px",
@@ -164,7 +169,7 @@ export default function ProjectPage5() {
             boxSizing: "border-box",
           }}
         >
-          © 2025 Nari Parcham Initiative. All rights reserved.
+          © 2025 Nari Parcham. All rights reserved.
         </footer>
       </main>
 

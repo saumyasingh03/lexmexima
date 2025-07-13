@@ -22,6 +22,7 @@ const projectData = [
     image:
       "https://cdn-res.keymedia.com/cms/images/ca/120/0394_638738979179423742.png",
     location: "India",
+        link: "/projects/1", 
   },
   {
     id: 2,
@@ -33,6 +34,7 @@ const projectData = [
     image:
       "https://media.licdn.com/dms/image/v2/C4E12AQFIjHQPOvmf2w/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1588278176711?e=2147483647&v=beta&t=7guuX1EPHCbB1fQzS4tAdsLrQsNwL28KWm_NmF8cD0E",
     location: "India",
+    link: "/projects/2"
   },
   {
     id: 3,
@@ -44,6 +46,7 @@ const projectData = [
     image:
       "https://www.lloydlawcollege.edu.in/images/LAW/blog/judicial-reforms-in-india.webp",
     location: "India",
+    link: "/projects/3"
   },
   {
     id: 4,
@@ -55,6 +58,7 @@ const projectData = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7p00OCX5bvUTxw0JmUep5D9Nl05tuNWvJRA&s",
     location: "India",
+    link: "/projects/4"
   },
   {
     id: 5,
@@ -66,6 +70,8 @@ const projectData = [
     image:
         "https://png.pngtree.com/thumb_back/fw800/background/20250512/pngtree-digital-justice-and-law-enforcement-image_17275251.jpg",
       location: "India",
+      link: "/projects/4"
+      
   },
 ];
 
@@ -156,8 +162,8 @@ const Projects = () => {
             and building a justice system that is fair, transparent, and people-centered.
             </p>
             <a
-              href="#learn-more"
-              className="text-violet-300 font-medium hover:text-violet-100 transition-colors duration-300 underline"
+               href="https://forms.gle/QVgxw657fzfKUW9WA"
+                className="text-accent font-medium hover:underline mt-auto"
             >
               Learn More →
             </a>

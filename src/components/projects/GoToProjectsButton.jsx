@@ -12,8 +12,8 @@ export default function GoToProjectsButton() {
         position: "fixed",
         top: 20,
         left: 20,
-        backgroundColor: "#059669",
-        color: "white",
+        backgroundColor: "white",
+        color: "#2B0D37",
         border: "none",
         padding: "10px 18px",
         borderRadius: "8px",
@@ -24,14 +24,8 @@ export default function GoToProjectsButton() {
         transition: "background-color 0.3s ease, box-shadow 0.3s ease",
         zIndex: 1000,
       }}
-      onMouseEnter={e => {
-        e.currentTarget.style.backgroundColor = "#047857";
-        e.currentTarget.style.boxShadow = "0 6px 16px rgba(4, 120, 87, 0.8)";
-      }}
-      onMouseLeave={e => {
-        e.currentTarget.style.backgroundColor = "#059669";
-        e.currentTarget.style.boxShadow = "0 4px 12px rgba(5, 150, 105, 0.6)";
-      }}
+     
+      
     >
       ← Go to Articles
     </button>
