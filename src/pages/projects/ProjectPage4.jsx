@@ -40,7 +40,7 @@ const Section = ({ title, children, delay = 0 }) => {
         }}
       >
         <span role="img" aria-hidden="true" style={{ fontSize: "1.9rem" }}>
-          🛠️
+          ⚖️
         </span>
         {title}
       </h2>
@@ -100,7 +100,7 @@ export default function ProjectPage4() {
               userSelect: "text",
             }}
           >
-            Kaam Ka Haq: Labor Rights for Every Worker
+            Nyay Setu: Legal Aid & Pro Bono Services
           </h1>
           <p
             style={{
@@ -111,72 +111,61 @@ export default function ProjectPage4() {
               fontStyle: "italic",
             }}
           >
-            Work with Dignity. Rights with Clarity.
+            Justice for All. Support Without Barriers.
           </p>
         </section>
 
         {/* Description Section */}
         <Section title="Project Description" delay={350}>
           <p>
-            Kaam Ka Haq is a grassroots labor rights and legal awareness initiative that aims to educate, organize, and empower workers—especially those in informal, unregulated, and rural employment sectors. India’s labor force is overwhelmingly informal, and millions of workers remain unaware of their basic rights under law: fair wages, safe working conditions, maternity benefits, equal pay, and protection from exploitation. This project seeks to bridge that gap.
+            <strong>Nyay Setu</strong> is a legal empowerment project dedicated to providing free legal aid and pro bono support to underserved individuals and communities. While the Constitution guarantees access to justice, in practice, millions are left without legal representation due to poverty, illiteracy, or fear of the system. This project addresses that gap directly.
           </p>
           <p>
-            Rather than approaching labor as a legal subject alone, Kaam Ka Haq frames it as a human and civic right—linking dignity, safety, and justice with every form of work, be it domestic work, construction, agriculture, gig work, or factory labor.
-          </p>
-          <p>
-            The project operates in three core areas:
+            With a growing network of legal professionals, student volunteers, and grassroots justice workers, Nyay Setu ensures that the door to legal redress is open to everyone—irrespective of caste, gender, income, or geography.
           </p>
 
           <h3 style={{ fontWeight: "700", marginTop: "24px", marginBottom: "16px", color: "#0b3c6b" }}>
-            1. Legal Literacy & Awareness
+            1. Legal Aid Clinics
           </h3>
           <p>
-            We organize interactive workshops, street plays, and audio-visual sessions in local languages to break down complex labor laws into accessible, relatable knowledge. Workers are taught about:
+            We establish community-based legal aid clinics in collaboration with law schools, bar associations, and civil society organizations. These clinics offer:
           </p>
           <ul style={{ paddingLeft: "1.3rem", color: "#2c3e50", marginBottom: "24px" }}>
-            <li>Minimum Wages Act</li>
-            <li>Unorganized Workers’ Social Security Act</li>
-            <li>Maternity Benefit Act</li>
-            <li>Inter-State Migrant Workers Act</li>
-            <li>Occupational Safety, Health & Working Conditions Code</li>
-            <li>Legal protections for domestic, agricultural, and construction workers</li>
-          </ul>
-          <p>
-            Printed visual guides, mobile audio clips, and local helpline posters are distributed widely to reach even illiterate or semi-literate populations.
-          </p>
-
-          <h3 style={{ fontWeight: "700", marginTop: "24px", marginBottom: "16px", color: "#0b3c6b" }}>
-            2. Worker Support Systems
-          </h3>
-          <p>
-            We set up Labor Rights Help Desks in partnership with local panchayats, trade unions, and civil society groups. These act as first-response legal support centers, where workers can:
-          </p>
-          <ul style={{ paddingLeft: "1.3rem", color: "#2c3e50", marginBottom: "24px" }}>
-            <li>File complaints or report abuse</li>
-            <li>Get help with wage theft or contract fraud</li>
-            <li>Access compensation or social security schemes</li>
-            <li>Learn how to document evidence and seek redress</li>
-            <li>Special support for migrant workers, women workers, and young laborers facing layered vulnerabilities</li>
+            <li>Free legal consultations and document drafting</li>
+            <li>Support for domestic violence, land disputes, labor violations, and child rights</li>
+            <li>Assistance with court forms, affidavits, and procedural guidance</li>
+            <li>Referral to empanelled pro bono lawyers</li>
           </ul>
 
           <h3 style={{ fontWeight: "700", marginTop: "24px", marginBottom: "16px", color: "#0b3c6b" }}>
-            3. Leadership & Local Advocacy
+            2. Awareness & Outreach
           </h3>
           <p>
-            The heart of Kaam Ka Haq is building a network of worker leaders and paralegal volunteers. These community champions are trained to:
+            Many people don’t seek justice simply because they don’t know where to begin. Nyay Setu conducts mobile legal literacy drives using vans, WhatsApp legal tips, puppet shows, and paralegal-led village sessions to educate communities about:
           </p>
           <ul style={{ paddingLeft: "1.3rem", color: "#2c3e50", marginBottom: "24px" }}>
-            <li>Facilitate legal aid referrals</li>
-            <li>Hold dialogue with local employers</li>
-            <li>Mobilize collective bargaining</li>
-            <li>Engage with labor departments</li>
-            <li>Conduct local campaigns on safe workplaces and fair wages</li>
+            <li>Basic rights and entitlements</li>
+            <li>How to file FIRs, complaints, and RTI applications</li>
+            <li>Legal aid eligibility and how to access it</li>
           </ul>
+
+          <h3 style={{ fontWeight: "700", marginTop: "24px", marginBottom: "16px", color: "#0b3c6b" }}>
+            3. Volunteer Lawyers & Justice Fellows
+          </h3>
           <p>
-            By placing leadership directly in the hands of workers, we aim to shift the power balance from top-down reform to bottom-up accountability.
+            We build a strong network of pro bono lawyers and law students who commit to a set number of hours each month to serve vulnerable populations. Our Justice Fellows also:
+          </p>
+          <ul style={{ paddingLeft: "1.3rem", color: "#2c3e50", marginBottom: "24px" }}>
+            <li>Assist in court proceedings and mediation</li>
+            <li>Track cases and ensure follow-ups</li>
+            <li>Support survivors of violence or displacement with dignity</li>
+          </ul>
+
+          <p>
+            Nyay Setu believes legal aid isn’t charity—it’s a constitutional promise. We aim to make that promise real by bridging legal deserts, removing procedural barriers, and standing by those who need it most.
           </p>
           <p>
-            This project does not simply aim to enforce laws—it seeks to reclaim dignity in labor. It challenges the silence around exploitation and builds a culture where every worker knows: “Mera kaam, mera haq.” (My work, my right.)
+            With every case we support, and every injustice we challenge, we move one step closer to a future where justice is truly accessible—for all.
           </p>
         </Section>
 
@@ -193,7 +182,7 @@ export default function ProjectPage4() {
             boxSizing: "border-box",
           }}
         >
-          © 2025 Kaam Ka Haq Initiative. All rights reserved.
+          © 2025 Nari Parcham. All rights reserved.
         </footer>
       </main>
 

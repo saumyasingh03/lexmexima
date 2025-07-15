@@ -40,7 +40,7 @@ const Section = ({ title, children, delay = 0 }) => {
         }}
       >
         <span role="img" aria-hidden="true" style={{ fontSize: "1.9rem" }}>
-          📢
+          ⚖️
         </span>
         {title}
       </h2>
@@ -100,7 +100,7 @@ export default function ProjectPage3() {
               userSelect: "text",
             }}
           >
-            RTI Advocacy: Empowering Villages Through Information
+            Judicial Reform & Accountability
           </h1>
           <p
             style={{
@@ -111,32 +111,29 @@ export default function ProjectPage3() {
               fontStyle: "italic",
             }}
           >
-            Ask. Know. Act.
+            Fair. Fast. Fearless.
           </p>
         </section>
 
         {/* Description Section */}
         <Section title="Project Description" delay={350}>
           <p>
-            The Right to Information (RTI) Act is one of India’s most powerful democratic tools but in many rural areas, it remains unused, misunderstood, or feared. This project aims to change that.
+            A strong and independent judiciary is the backbone of democracy — but it must also be accessible, efficient, and transparent. The "Judicial Reform & Accountability" project is a national initiative that aims to strengthen public trust in our judicial institutions by advocating for systemic improvements that make justice delivery faster, fairer, and more inclusive.
           </p>
           <p>
-            RTI Advocacy: Empowering Villages Through Information is a grassroots initiative designed to educate, train, and support rural citizens in using the RTI Act to demand accountability from local government bodies. From ensuring fair distribution of ration cards, pensions, and job cards under MNREGA, to tracking development funds and school schemes, this project brings the power of questioning back to the people.
+            Delays, backlogs, lack of transparency, and limited access to affordable legal support often hinder ordinary citizens, especially the poor and marginalized, from receiving timely justice. This project addresses these challenges by combining research, public engagement, and legal reform campaigns.
           </p>
           <p>
-            The initiative begins by working directly with panchayats, self-help groups, youth clubs, and local schools, conducting interactive RTI literacy workshops in regional languages. These are not one-time sessions but part of a deeper engagement process that builds confidence, legal awareness, and practical skills. Participants learn how to draft RTI applications, track timelines, interpret responses, and take further action through appeals if needed.
+            We work with legal professionals, civil society organizations, students, and affected communities to push for reforms such as judicial transparency, open court data, faster case processing through digital tools, and stronger grievance redress mechanisms within the court system.
           </p>
           <p>
-            Beyond legal training, the project also creates safe spaces for collective learning — including RTI Help Circles, Village RTI Libraries, and local campaigns demystifying governance processes. We use real-life success stories to inspire action, and visual, audio, and theatre-based tools to make complex laws accessible to those with limited formal education.
+            A key component involves public education — demystifying court processes, promoting awareness of legal rights, and conducting watchdog monitoring of case delays, judge vacancies, and legal aid efficiency. We also convene roundtables and publish citizen reports to hold institutions accountable to their mandate.
           </p>
           <p>
-            A key pillar of the project is building community-based support networks and training a new cadre of RTI Fellows and Village Info Leaders who act as first responders and local guides. These leaders become bridges between citizens and institutions, helping communities stay informed, organized, and fearless in their pursuit of transparency.
+            Beyond the legal system, the project also champions people-first practices within courts — gender-sensitive benches, inclusive courtroom language, and support for underrepresented litigants. Our vision is a justice system that does not just deliver judgments, but earns public confidence through fairness, accessibility, and integrity.
           </p>
           <p>
-            This initiative is not about legal paperwork alone. It’s about shifting the rural narrative from helplessness to agency. RTI is not just a law, it's a mindset: the belief that ordinary people have the right to ask questions and expect answers.
-          </p>
-          <p>
-            Through this project, we aim to cultivate that mindset — village by village, voice by voice.
+            Through informed advocacy, strategic litigation, and sustained civic pressure, this initiative seeks to ensure that the promise of justice is not reserved for the privileged few, but delivered equitably to every citizen.
           </p>
         </Section>
 
@@ -153,7 +150,7 @@ export default function ProjectPage3() {
             boxSizing: "border-box",
           }}
         >
-          © 2025 RTI Advocacy Initiative. All rights reserved.
+          © 2025 Nari Parcham. All rights reserved.
         </footer>
       </main>
 
