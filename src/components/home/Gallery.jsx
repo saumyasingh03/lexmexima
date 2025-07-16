@@ -74,7 +74,7 @@ const GalleryCarousel = () => {
             Visualizing Our Mission
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold font-serif text-primary-light mb-4">
-            Lax Maxima's Journey in Pictures
+            Lex Maxima's Journey in Pictures
           </h3>
           <p className="max-w-2xl mx-auto font-serif text-white/80">
             A vibrant collection of moments from our legal awareness workshops,

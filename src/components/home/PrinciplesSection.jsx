@@ -76,7 +76,7 @@ const TestimonialsSection = () => { // Renamed to PrinciplesSection for clarity
             Pillars of Justice and Empowerment
           </h3>
           <p className="max-w-2xl mx-auto font-serif text-white/80">
-            The foundational beliefs guiding Lax Maxima's mission to foster an
+            The foundational beliefs guiding Lex Maxima's mission to foster an
             equitable and just society through legal and civic leadership.
           </p>
         </motion.div>

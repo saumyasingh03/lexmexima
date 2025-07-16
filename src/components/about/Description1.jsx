@@ -31,7 +31,7 @@ const Description = () => {
           About New Project
         </h2>
         <p className="text-gray-700 text-lg leading-relaxed max-w-md mx-auto lg:mx-0">
-        At Lax Maxima, we believe the law doesn’t live only in courtrooms — it lives in every village where a woman
+        At Lex Maxima, we believe the law doesn’t live only in courtrooms — it lives in every village where a woman
         is denied her rights, every school shaped by caste, and every home where silence replaces justice.
         This project reclaims the law as a language of the people — not in jargon, but in lived realities.
         We're building a network of young legal educators and grassroots leaders to bring justice where it was never meant to reach.

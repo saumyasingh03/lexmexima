@@ -27,7 +27,7 @@ const MissionCard = () => {
         transition={{ delay: 0.3, duration: 0.6 }}
         className="text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed text-white/90"
       >
-        Lax Maxima is dedicated to empowering communities through legal literacy,
+        Lex Maxima is dedicated to empowering communities through legal literacy,
         civic engagement, and leadership development, ensuring justice and knowledge for all.
       </motion.p>
 

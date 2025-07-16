@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <h2 className="text-3xl font-serif font-bold mb-3 sm:mb-4">
-             Lax Maxima
+             Lex Maxima
             </h2>
             <p className="text-gray-300 font-serif text-sm sm:text-base">
               Advancing grassroots feminist resistance and collective healing
@@ -83,7 +83,7 @@ const Footer = () => {
         </div>
         <div className="border-t border-primary-light mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-gray-300 text-sm sm:text-base">
           <p>
-            © {new Date().getFullYear()} Lax Maxima. All rights reserved.
+            © {new Date().getFullYear()} Lex Maxima. All rights reserved.
           </p>
         </div>
       </div>

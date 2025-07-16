@@ -82,7 +82,7 @@ const StatsSection = () => {
             Quantifying Our Commitment to Justice
           </h3>
           <p className="max-w-2xl mx-auto font-serif text-white/80">
-            Discover the measurable impact of Lax Maxima in legal education,
+            Discover the measurable impact of Lex Maxima in legal education,
             civic engagement, and community empowerment.
           </p>
         </motion.div>

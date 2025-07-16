@@ -29,10 +29,10 @@ const HeroSection = () => {
             About Us
           </h1>
           <p className="text-lg md:text-xl text-white/90 max-w-xl drop-shadow font-light">
-            Lax Maxima was founded as a bold step toward equity and representation in India’s legal and civic systems.
+            Lex Maxima was founded as a bold step toward equity and representation in India’s legal and civic systems.
             Established to uplift students from underserved regions, the academy offers a platform for those historically 
             excluded from careers in law, judiciary, and public leadership. In a landscape often marked by unequal access
-            and systemic barriers, Lax Maxima stands as a space for learning, empowerment, and change.
+            and systemic barriers, Lex Maxima stands as a space for learning, empowerment, and change.
           </p>
         </motion.div>
         <motion.div
@@ -45,7 +45,7 @@ const HeroSection = () => {
             Why We Exist: Justice for the Margins
           </h2>
           <p className="text-white/90 text-sm mb-2">
-            Lax Maxima exists to amplify the voices of aspiring leaders from the margins — first-generation learners,
+            Lex Maxima exists to amplify the voices of aspiring leaders from the margins — first-generation learners,
             students from rural and semi-urban areas, Dalit, Adivasi, and economically disadvantaged communities. 
             We challenge the barriers that limit access to legal education and civic leadership by creating inclusive,
             rigorous, and community-rooted learning environments. Our mission is grounded in justice, empathy, and the belief 
