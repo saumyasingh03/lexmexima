@@ -38,7 +38,7 @@ const About = () => {
          Rising Beyond Barriers.
         </h2>
         <p className=" text-center text-gray-600 max-w-3xl font-serif mx-auto text-sm sm:text-base">
-          Lax Maxima builds a new generation of legal and civic leaders—youth from underserved communities who carry their truths,
+          Lex Maxima builds a new generation of legal and civic leaders—youth from underserved communities who carry their truths,
            their struggles, and their strength into every courtroom and council.
           Where the system once excluded, they now lead—with purpose, power, and a vision for a just tomorrow.
         </p>

@@ -112,7 +112,7 @@ const Hero = () => {
             variants={fadeInUp}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold font-serif mb-4 leading-tight"
           >
-            Lax Maxima – <br />
+            Lex Maxima – <br />
             <span className="text-accent">
               <TypingText lines={typingLines} className="inline-block" />
             </span>

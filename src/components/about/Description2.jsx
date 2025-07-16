@@ -11,7 +11,7 @@ const Description = () => {
         <p className="text-gray-700 text-lg leading-relaxed max-w-md mx-auto lg:mx-0">
           Because silence isn’t natural — it’s constructed.
           Because justice should not be a privilege — it should be a right.
-          At Lax Maxima, we work with those who have been told they don’t belong in the courtroom, 
+          At Lex Maxima, we work with those who have been told they don’t belong in the courtroom, 
           in parliament, or in public debates. We are here for the student denied a seat at the table because of her caste.
           For the tribal girl told she doesn’t need an education. For the queer youth forced into silence.
           We don’t wait for permission — we build power.

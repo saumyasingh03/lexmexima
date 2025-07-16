@@ -23,7 +23,7 @@ const Header = ({ toggleMobileMenu, mobileMenuOpen, isActive }) => {
               alt="Logo"
               className="h-10 w-10 object-contain"
             />
-            <span>Lax Maxima</span>
+            <span>Lex Maxima</span>
           </Link>
 
           {/* Desktop Navigation */}

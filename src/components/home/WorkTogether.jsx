@@ -21,7 +21,7 @@ const WorkTogether = () => {
         {/* Headline */}
         <div className="text-center mb-12">
           <h2 className="text-lg font-medium text-accent mb-2">
-            Lax Maxima – Law, Justice & Civic Leadership Academy
+            Lex Maxima – Law, Justice & Civic Leadership Academy
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold font-serif text-primary-light mb-4">
             Justice. Knowledge. Voice For All.
